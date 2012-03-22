@@ -1,0 +1,84 @@
+distro-info-data (0.6) UNRELEASED; urgency=low
+
+  * Put data into separate source package to avoid a full source rebuild for
+    just updating the data.
+
+ -- Benjamin Drung <bdrung@debian.org>  Fri, 23 Mar 2012 00:16:02 +0100
+
+distro-info (0.5.1) unstable; urgency=low
+
+  [ Stefano Rivera ]
+  * Bump Standards-Version to 3.9.3, no changes needed.
+  * Update machine-readable copyright Format to 1.0.
+
+  [ Benjamin Drung ]
+  * DebianDistroInfo.hs, UbuntuDistroInfo.hs: Replace System import by
+    System.Environment and System.Exit import to fix build failure.
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 25 Feb 2012 16:11:25 +0100
+
+distro-info (0.5) unstable; urgency=low
+
+  * Allow retrieving the release version and full name with the Python module.
+    (Closes: #647951)
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 23 Jan 2012 19:18:50 +0100
+
+distro-info (0.4) unstable; urgency=low
+
+  [ Stefano Rivera ]
+  * Add is_lts method to UbuntuDistroInfo
+
+  [ Benjamin Drung ]
+  * Enable optimization for Haskell code.
+  * Break old ubuntu-dev-tools package instead of recommending
+    python-distro-info.
+
+ -- Benjamin Drung <bdrung@debian.org>  Tue, 25 Oct 2011 23:19:56 +0200
+
+distro-info (0.3) unstable; urgency=low
+
+  [ Stefano Rivera ]
+  * Add basic Perl module, API-compatible with the Python one.
+  * Add liblist-compare-perl as a Build-Dependency for the Perl test suite.
+
+  [ Benjamin Drung ]
+  * Improve speed by rewriting scripts in Haskell (LP: #796317).
+  * Allow printing of release version and full name (LP: #807644).
+  * Split scripts, Perl and Python libraries in separate binary packages.
+
+ -- Benjamin Drung <bdrung@debian.org>  Tue, 11 Oct 2011 23:55:18 +0200
+
+distro-info (0.2.3) unstable; urgency=low
+
+  * "old" is not a Debian suite alias, but "oldstable" is.
+  * Add myself to Uploaders.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 07 Oct 2011 22:24:08 +0200
+
+distro-info (0.2.2) unstable; urgency=low
+
+  * Add 12.04 LTS "Precise Pangolin" to Ubuntu list.
+
+ -- Benjamin Drung <bdrung@debian.org>  Thu, 06 Oct 2011 01:07:36 +0200
+
+distro-info (0.2.1) unstable; urgency=low
+
+  * Correct release and EOL dates of old Ubuntu releases by reviewing
+    ubuntu-announce emails.
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 23 Jul 2011 15:55:23 +0200
+
+distro-info (0.2) unstable; urgency=low
+
+  * Make sure all DistroInfo classes have a .codename method.
+  * Add experimental to list of Debian distributions.
+  * Bump Breaks and Replaceses for ubuntu-dev-tools.
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 25 Jun 2011 16:30:59 +0200
+
+distro-info (0.1) unstable; urgency=low
+
+  * Initial release (Closes: #559761)
+
+ -- Benjamin Drung <bdrung@debian.org>  Sun, 19 Jun 2011 00:08:57 +0200
