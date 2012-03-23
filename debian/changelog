@@ -1,4 +1,4 @@
-distro-info-data (0.7) UNRELEASED; urgency=low
+distro-info-data (0.7) unstable; urgency=low
 
   * Use full dates (add days for future EOL dates of Ubuntu).
 
