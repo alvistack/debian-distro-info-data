@@ -1,3 +1,9 @@
+distro-info-data (0.8) UNRELEASED; urgency=low
+
+  * Add validate-csv-data script to validate data on build time.
+
+ -- Benjamin Drung <bdrung@debian.org>  Tue, 03 Apr 2012 15:41:01 +0200
+
 distro-info-data (0.7) unstable; urgency=low
 
   * Use full dates (add days for future EOL dates of Ubuntu).
