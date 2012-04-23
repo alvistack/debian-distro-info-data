@@ -1,8 +1,8 @@
-distro-info-data (0.9) UNRELEASED; urgency=low
+distro-info-data (0.9) unstable; urgency=low
 
   * Add Ubuntu Quantal Quetzal.
 
- -- Stefano Rivera <stefanor@debian.org>  Mon, 23 Apr 2012 17:16:01 +0200
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 23 Apr 2012 17:21:58 +0200
 
 distro-info-data (0.8) unstable; urgency=low
 
