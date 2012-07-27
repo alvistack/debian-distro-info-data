@@ -11,5 +11,6 @@ version,codename,series,created,release,eol
 5.0,Lenny,lenny,2007-04-08,2009-02-14,2012-02-06
 6.0,Squeeze,squeeze,2009-02-14,2011-02-06
 7.0,Wheezy,wheezy,2011-02-06
+8.0,Jessie,jessie,2014-01-01
 ,Sid,sid,1993-08-16
 ,Experimental,experimental,1993-08-16
