@@ -1,4 +1,4 @@
-distro-info-data (0.11) UNRELEASED; urgency=low
+distro-info-data (0.11) unstable; urgency=low
 
   [ Benjamin Drung ]
   * Add Debian 8.0 "Jessie".
@@ -6,7 +6,7 @@ distro-info-data (0.11) UNRELEASED; urgency=low
   [ Stefano Rivera ]
   * Add Ubuntu Raring Ringtail.
 
- -- Benjamin Drung <bdrung@debian.org>  Sat, 28 Jul 2012 00:05:56 +0200
+ -- Benjamin Drung <bdrung@debian.org>  Thu, 18 Oct 2012 11:20:58 +0200
 
 distro-info-data (0.10) unstable; urgency=low
 
