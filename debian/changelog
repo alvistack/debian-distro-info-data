@@ -1,6 +1,7 @@
 distro-info-data (0.12) UNRELEASED; urgency=low
 
   * Ubuntu 13.04 "Raring Ringtail" will only be supported for 9 month.
+  * Switch to debhelper 9.
 
  -- Benjamin Drung <bdrung@debian.org>  Tue, 19 Mar 2013 23:08:09 +0100
 
