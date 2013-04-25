@@ -1,3 +1,9 @@
+distro-info-data (0.14) unstable; urgency=low
+
+  * Add Ubuntu 13.10, Saucy Salamander. Thanks Iain Lane.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 25 Apr 2013 17:11:17 +0200
+
 distro-info-data (0.13) unstable; urgency=low
 
   * Update EOL dates of Ubuntu 8.04 LTS, 10.04 LTS, and 11.10 to 2013-05-09.
