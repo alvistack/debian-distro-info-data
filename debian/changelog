@@ -1,3 +1,9 @@
+distro-info-data (0.15) UNRELEASED; urgency=low
+
+  * Debian wheezy released. Update squeeze EOL.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 05 May 2013 10:40:12 +0200
+
 distro-info-data (0.14) unstable; urgency=low
 
   * Add Ubuntu 13.10, Saucy Salamander. Thanks Iain Lane.
