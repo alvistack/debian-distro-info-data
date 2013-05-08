@@ -1,3 +1,10 @@
+distro-info-data (0.16) unstable; urgency=low
+
+  * Correct current Debian testing series from experimental to jessie.
+  * Correct release date of Debian 7.0 "Wheezy".
+
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 08 May 2013 11:33:31 +0200
+
 distro-info-data (0.15) unstable; urgency=low
 
   * Debian wheezy released. Update squeeze EOL.
