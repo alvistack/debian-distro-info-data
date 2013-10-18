@@ -1,3 +1,9 @@
+distro-info-data (0.17) unstable; urgency=low
+
+  * Add Ubuntu 14.04, Trusty Tahr (Closes: #726696)
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 18 Oct 2013 16:52:25 +0200
+
 distro-info-data (0.16) unstable; urgency=low
 
   * Correct current Debian testing series from experimental to jessie.
