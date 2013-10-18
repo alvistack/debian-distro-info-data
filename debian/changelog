@@ -1,9 +1,3 @@
-distro-info-data (0.17) UNRELEASED; urgency=low
-
-  * Add ubuntu "devel" series alias.
-
- -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Thu, 17 Oct 2013 20:33:25 +0100
-
 distro-info-data (0.16) unstable; urgency=low
 
   * Correct current Debian testing series from experimental to jessie.

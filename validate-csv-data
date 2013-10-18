@@ -35,7 +35,7 @@ _EARLIER_DATES = (
 )
 _STRINGS = {
     "debian": ("codename", "series"),
-    "ubuntu": ("codename", "series"),
+    "ubuntu": ("version", "codename", "series"),
 }
 
 def convert_date(string):
