@@ -1,11 +1,11 @@
-distro-info-data (0.18) UNRELEASED; urgency=medium
+distro-info-data (0.18) unstable; urgency=medium
 
   * Update EOL date of Ubuntu 13.04 "Raring Ringtai" to 2014-01-27.
   * Bump Standards-Version to 3.9.5.
   * Use just the stable release version without the point release suffix,
     i.e. 6.0 for squeeze, 7 for wheezy, and 8 for jessie. (Closes: #724557)
 
- -- Benjamin Drung <bdrung@debian.org>  Tue, 07 Jan 2014 22:12:36 +0100
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 08 Jan 2014 00:20:59 +0100
 
 distro-info-data (0.17) unstable; urgency=low
 
