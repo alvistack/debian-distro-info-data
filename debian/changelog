@@ -1,6 +1,7 @@
 distro-info-data (0.18) UNRELEASED; urgency=medium
 
   * Update EOL date of Ubuntu 13.04 "Raring Ringtai" to 2014-01-27.
+  * Bump Standards-Version to 3.9.5.
 
  -- Benjamin Drung <bdrung@debian.org>  Tue, 07 Jan 2014 22:12:36 +0100
 

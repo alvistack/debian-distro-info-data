@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Benjamin Drung <bdrung@debian.org>
 Uploaders: Stefano Rivera <stefanor@debian.org>
 Build-Depends: debhelper (>= 9), python
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Vcs-Git: git://anonscm.debian.org/collab-maint/distro-info-data.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/distro-info-data.git
 
