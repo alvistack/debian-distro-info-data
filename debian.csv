@@ -9,7 +9,7 @@ version,codename,series,created,release,eol
 3.1,Sarge,sarge,2002-07-19,2005-06-06,2008-03-30
 4.0,Etch,etch,2005-06-06,2007-04-08,2010-02-15
 5.0,Lenny,lenny,2007-04-08,2009-02-14,2012-02-06
-6.0,Squeeze,squeeze,2009-02-14,2011-02-06,2014-05-04
+6.0,Squeeze,squeeze,2009-02-14,2011-02-06,2014-05-31
 7,Wheezy,wheezy,2011-02-06,2013-05-04
 8,Jessie,jessie,2013-05-04
 ,Sid,sid,1993-08-16
