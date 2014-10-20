@@ -1,8 +1,9 @@
-distro-info-data (0.23) UNRELEASED; urgency=medium
+distro-info-data (0.23) unstable; urgency=medium
 
+  [ Colin Watson ]
   * Add Ubuntu 15.04, Vivid Vervet (with provisional release date).
 
- -- Colin Watson <cjwatson@debian.org>  Mon, 20 Oct 2014 15:13:48 +0100
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 20 Oct 2014 16:33:46 +0200
 
 distro-info-data (0.22) unstable; urgency=medium
 
