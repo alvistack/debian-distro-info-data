@@ -1,3 +1,9 @@
+distro-info-data (0.24) unstable; urgency=medium
+
+  * Add Debian 9 and 10 codenames (with provisional creation dates)
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 10 Nov 2014 12:36:20 +0100
+
 distro-info-data (0.23) unstable; urgency=medium
 
   [ Colin Watson ]
