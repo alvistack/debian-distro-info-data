@@ -1,8 +1,8 @@
-distro-info-data (0.25) UNRELEASED; urgency=medium
+distro-info-data (0.25) unstable; urgency=medium
 
   * Update Debian 9 target release date.
 
- -- Stefano Rivera <stefanor@debian.org>  Wed, 15 Apr 2015 16:16:37 -0400
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 15 Apr 2015 16:41:11 -0400
 
 distro-info-data (0.24) unstable; urgency=medium
 
