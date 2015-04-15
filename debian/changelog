@@ -1,3 +1,9 @@
+distro-info-data (0.25) UNRELEASED; urgency=medium
+
+  * Update Debian 9 target release date.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 15 Apr 2015 16:16:37 -0400
+
 distro-info-data (0.24) unstable; urgency=medium
 
   * Add Debian 9 and 10 codenames (with provisional creation dates)
