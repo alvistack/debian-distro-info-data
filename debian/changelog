@@ -1,6 +1,7 @@
 distro-info-data (0.28) UNRELEASED; urgency=medium
 
   * Update Ubuntu 15.10 release date.
+  * Add Ubuntu 16.04, with a provisional release date.
 
  -- Stefano Rivera <stefanor@debian.org>  Wed, 21 Oct 2015 19:57:49 -0700
 
