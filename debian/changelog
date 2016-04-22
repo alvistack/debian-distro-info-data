@@ -1,10 +1,10 @@
-distro-info-data (0.29) UNRELEASED; urgency=medium
+distro-info-data (0.29) unstable; urgency=medium
 
   * Add Ubuntu 16.10, Yakkety Yak.
   * Bump Standards-Version to 3.9.8, no changes needed.
   * Switch VCS URLs to https.
 
- -- Stefano Rivera <stefanor@debian.org>  Fri, 22 Apr 2016 13:12:17 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 22 Apr 2016 13:16:49 -0700
 
 distro-info-data (0.28) unstable; urgency=medium
 
