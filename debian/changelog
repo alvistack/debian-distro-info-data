@@ -1,3 +1,9 @@
+distro-info-data (0.29) UNRELEASED; urgency=medium
+
+  * Add Ubuntu 16.10, Yakkety Yak.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 22 Apr 2016 13:12:17 -0700
+
 distro-info-data (0.28) unstable; urgency=medium
 
   * Update Ubuntu 15.10 release date.
