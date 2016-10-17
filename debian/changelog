@@ -1,3 +1,9 @@
+distro-info-data (0.30) UNRELEASED; urgency=medium
+
+  * Fix release date of Ubuntu 16.10.
+
+ -- Martin Pitt <mpitt@debian.org>  Mon, 17 Oct 2016 21:13:54 +0200
+
 distro-info-data (0.29) unstable; urgency=medium
 
   * Add Ubuntu 16.10, Yakkety Yak.
