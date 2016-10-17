@@ -1,6 +1,7 @@
 distro-info-data (0.30) UNRELEASED; urgency=medium
 
   * Fix release date of Ubuntu 16.10.
+  * Add Ubuntu 17.04, Zesty Zapus, with provisional release date.
 
  -- Martin Pitt <mpitt@debian.org>  Mon, 17 Oct 2016 21:13:54 +0200
 
