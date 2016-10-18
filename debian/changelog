@@ -1,3 +1,9 @@
+distro-info-data (0.31) UNRELEASED; urgency=medium
+
+  * Fix EOL date of Ubuntu 17.04 (9 months, not 18).
+
+ -- Martin Pitt <mpitt@debian.org>  Tue, 18 Oct 2016 11:07:11 +0200
+
 distro-info-data (0.30) unstable; urgency=medium
 
   [ Martin Pitt ]
