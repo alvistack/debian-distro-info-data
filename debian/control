@@ -10,6 +10,7 @@ Vcs-Browser: https://anonscm.debian.org/git/collab-maint/distro-info-data.git
 
 Package: distro-info-data
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Breaks: distro-info (<< 0.3~)
 Replaces: distro-info (<< 0.3~)

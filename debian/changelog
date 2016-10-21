@@ -1,3 +1,10 @@
+distro-info-data (0.32) unstable; urgency=medium
+
+  * Mark distro-info-data Multi-Arch: foreign. Thanks to Helmut Grohne.
+    (Closes: #841648)
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 22 Oct 2016 00:50:39 +0200
+
 distro-info-data (0.31) unstable; urgency=medium
 
   [ Martin Pitt ]
