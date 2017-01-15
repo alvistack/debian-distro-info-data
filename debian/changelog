@@ -1,3 +1,9 @@
+distro-info-data (0.33) unstable; urgency=medium
+
+  * Add Debian 11 codename (with provisional creation date) (Closes: #851447)
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 16 Jan 2017 00:53:52 +0100
+
 distro-info-data (0.32) unstable; urgency=medium
 
   * Mark distro-info-data Multi-Arch: foreign. Thanks to Helmut Grohne.
