@@ -14,5 +14,6 @@ version,codename,series,created,release,eol
 8,Jessie,jessie,2013-05-04,2015-04-25
 9,Stretch,stretch,2015-04-25
 10,Buster,buster,2018-07-01
+11,Bullseye,bullseye,2020-11-05
 ,Sid,sid,1993-08-16
 ,Experimental,experimental,1993-08-16

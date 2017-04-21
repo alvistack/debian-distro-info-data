@@ -1,3 +1,21 @@
+distro-info-data (0.35) unstable; urgency=medium
+
+  * Correct Ubuntu Zesty release date.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 20 Apr 2017 19:43:47 -0700
+
+distro-info-data (0.34) unstable; urgency=medium
+
+  * Add Ubuntu 17.10, Artful Aardvark.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 20 Apr 2017 16:42:23 -0700
+
+distro-info-data (0.33) unstable; urgency=medium
+
+  * Add Debian 11 codename (with provisional creation date) (Closes: #851447)
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 16 Jan 2017 00:53:52 +0100
+
 distro-info-data (0.32~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports.
