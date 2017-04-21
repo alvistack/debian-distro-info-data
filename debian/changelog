@@ -1,3 +1,9 @@
+distro-info-data (0.32~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 11 Nov 2016 00:07:16 +0000
+
 distro-info-data (0.32) unstable; urgency=medium
 
   * Mark distro-info-data Multi-Arch: foreign. Thanks to Helmut Grohne.
