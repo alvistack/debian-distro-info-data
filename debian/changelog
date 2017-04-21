@@ -1,3 +1,9 @@
+distro-info-data (0.35~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 20 Apr 2017 21:57:14 -0700
+
 distro-info-data (0.35) unstable; urgency=medium
 
   * Correct Ubuntu Zesty release date.
