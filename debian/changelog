@@ -1,3 +1,9 @@
+distro-info-data (0.35) UNRELEASED; urgency=medium
+
+  * Correct Ubuntu Zesty release date.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 20 Apr 2017 19:43:05 -0700
+
 distro-info-data (0.34) unstable; urgency=medium
 
   * Add Ubuntu 17.10, Artful Aardvark.
