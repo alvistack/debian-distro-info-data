@@ -3,6 +3,7 @@ distro-info-data (0.36) UNRELEASED; urgency=medium
   * Set EOL date for Debian Wheezy. This excludes LTS, which we haven't
     supported in distro-info yet, for Debian, but matches what we did for
     Squeeze.
+  * Set (provisional) EOL date for Debian Jessie.
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 03 Jun 2017 18:07:40 -0700
 
