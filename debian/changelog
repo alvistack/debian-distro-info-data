@@ -4,6 +4,8 @@ distro-info-data (0.36) UNRELEASED; urgency=medium
     supported in distro-info yet, for Debian, but matches what we did for
     Squeeze.
   * Set (provisional) EOL date for Debian Jessie.
+  * Set release date for Stretch (and matching creation date for Buster). It
+    has been announced.
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 03 Jun 2017 18:07:40 -0700
 

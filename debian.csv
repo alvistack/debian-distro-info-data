@@ -12,8 +12,8 @@ version,codename,series,created,release,eol
 6.0,Squeeze,squeeze,2009-02-14,2011-02-06,2014-05-31
 7,Wheezy,wheezy,2011-02-06,2013-05-04,2016-04-26
 8,Jessie,jessie,2013-05-04,2015-04-25,2018-06-06
-9,Stretch,stretch,2015-04-25
-10,Buster,buster,2018-07-01
+9,Stretch,stretch,2015-04-25,2017-06-17
+10,Buster,buster,2017-06-17
 11,Bullseye,bullseye,2020-11-05
 ,Sid,sid,1993-08-16
 ,Experimental,experimental,1993-08-16
