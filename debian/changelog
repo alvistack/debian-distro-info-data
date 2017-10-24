@@ -1,3 +1,9 @@
+distro-info-data (0.37) UNRELEASED; urgency=medium
+
+  * Add Ubuntu 18.04 LTS Bionic Beaver.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 24 Oct 2017 12:44:41 -0700
+
 distro-info-data (0.36) unstable; urgency=medium
 
   * Set EOL date for Debian Wheezy. This excludes LTS, which we haven't
