@@ -1,8 +1,8 @@
-distro-info-data (0.37) UNRELEASED; urgency=medium
+distro-info-data (0.37) unstable; urgency=medium
 
-  * Add Ubuntu 18.04 LTS Bionic Beaver.
+  * Add Ubuntu 18.04 LTS Bionic Beaver. (LP: #1727046)
 
- -- Stefano Rivera <stefanor@debian.org>  Tue, 24 Oct 2017 12:44:41 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 24 Oct 2017 13:11:56 -0700
 
 distro-info-data (0.36) unstable; urgency=medium
 
