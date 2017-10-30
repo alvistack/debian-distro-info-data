@@ -1,3 +1,9 @@
+distro-info-data (0.37~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 30 Oct 2017 11:53:20 -0700
+
 distro-info-data (0.37) unstable; urgency=medium
 
   * Add Ubuntu 18.04 LTS Bionic Beaver. (LP: #1727046)
