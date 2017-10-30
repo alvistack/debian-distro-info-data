@@ -1,3 +1,14 @@
+distro-info-data (0.36) unstable; urgency=medium
+
+  * Set EOL date for Debian Wheezy. This excludes LTS, which we haven't
+    supported in distro-info yet, for Debian, but matches what we did for
+    Squeeze.
+  * Set (provisional) EOL date for Debian Jessie.
+  * Set release date for Stretch (and matching creation date for Buster). It
+    has been announced.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 04 Jun 2017 07:20:00 -0700
+
 distro-info-data (0.35~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports.
