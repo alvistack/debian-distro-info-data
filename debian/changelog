@@ -1,3 +1,10 @@
+distro-info-data (0.36~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * Add myself to uploaders. 
+
+ -- Holger Levsen <holger@debian.org>  Sat, 29 Jul 2017 21:29:57 -0400
+
 distro-info-data (0.36) unstable; urgency=medium
 
   * Set EOL date for Debian Wheezy. This excludes LTS, which we haven't

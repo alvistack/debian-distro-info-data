@@ -2,7 +2,7 @@ Source: distro-info-data
 Section: devel
 Priority: optional
 Maintainer: Benjamin Drung <bdrung@debian.org>
-Uploaders: Stefano Rivera <stefanor@debian.org>
+Uploaders: Stefano Rivera <stefanor@debian.org>, Holger Levsen <holger@debian.org>
 Build-Depends: debhelper (>= 9), python
 Standards-Version: 3.9.8
 Vcs-Git: https://anonscm.debian.org/git/collab-maint/distro-info-data.git
