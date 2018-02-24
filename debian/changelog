@@ -1,3 +1,9 @@
+distro-info-data (0.38) UNRELEASED; urgency=medium
+
+  * Migrate VCS to salsa.debian.org.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 24 Feb 2018 23:46:55 +0100
+
 distro-info-data (0.37) unstable; urgency=medium
 
   * Add Ubuntu 18.04 LTS Bionic Beaver. (LP: #1727046)
