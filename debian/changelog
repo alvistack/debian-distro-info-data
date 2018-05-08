@@ -8,6 +8,7 @@ distro-info-data (0.38) UNRELEASED; urgency=medium
   * Add Debian 12 Bookworm, with a provisional creation date.
   * Declare: Rules-Requires-Root: no.
   * Switch copyright Format URL to https.
+  * Update copyright.
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 24 Feb 2018 23:46:55 +0100
 
