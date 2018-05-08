@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Benjamin Drung <bdrung@debian.org>
 Uploaders: Stefano Rivera <stefanor@debian.org>
 Build-Depends: debhelper (>= 9), python
-Standards-Version: 3.9.8
+Standards-Version: 4.1.4
 Vcs-Git: https://salsa.debian.org/debian/distro-info-data.git
 Vcs-Browser: https://salsa.debian.org/debian/distro-info-data
 Rules-Requires-Root: no
