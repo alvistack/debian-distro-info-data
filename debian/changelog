@@ -3,6 +3,8 @@ distro-info-data (0.38) UNRELEASED; urgency=medium
   * Migrate VCS to salsa.debian.org.
   * Add Ubuntu 18.10 Cosmic Cuttlefish. (LP: #1769992)
   * Correct EOL date for zesty. (LP: #1743936)
+  * Adjust provisional creation date for Debian 11 Bullseye to August 2019.
+    The release-team expects Buster to release "some time mid-2019".
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 24 Feb 2018 23:46:55 +0100
 
