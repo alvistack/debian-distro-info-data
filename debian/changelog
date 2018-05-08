@@ -6,6 +6,7 @@ distro-info-data (0.38) UNRELEASED; urgency=medium
   * Adjust provisional creation date for Debian 11 Bullseye to August 2019.
     The release-team expects Buster to release "some time mid-2019".
   * Add Debian 12 Bookworm, with a provisional creation date.
+  * Declare: Rules-Requires-Root: no.
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 24 Feb 2018 23:46:55 +0100
 
