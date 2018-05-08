@@ -15,5 +15,6 @@ version,codename,series,created,release,eol
 9,Stretch,stretch,2015-04-25,2017-06-17
 10,Buster,buster,2017-06-17
 11,Bullseye,bullseye,2019-08-01
+12,Bookworm,bookworm,2021-08-01
 ,Sid,sid,1993-08-16
 ,Experimental,experimental,1993-08-16
