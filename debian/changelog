@@ -1,3 +1,9 @@
+distro-info-data (0.38~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 09 Aug 2018 16:58:24 -0700
+
 distro-info-data (0.38) unstable; urgency=medium
 
   * Migrate VCS to salsa.debian.org.
