@@ -1,8 +1,8 @@
-distro-info-data (0.39) UNRELEASED; urgency=medium
+distro-info-data (0.39) unstable; urgency=medium
 
   * Add Ubuntu 19.04 Disco Dingo. (LP: #1800656)
 
- -- Stefano Rivera <stefanor@debian.org>  Tue, 30 Oct 2018 06:30:52 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 30 Oct 2018 06:33:17 -0700
 
 distro-info-data (0.38) unstable; urgency=medium
 
