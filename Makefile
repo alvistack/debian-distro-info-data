@@ -10,4 +10,8 @@ test:
 	./validate-csv-data -d debian.csv
 	./validate-csv-data -u ubuntu.csv
 
-.PHONY: build install test
+up-to-date:
+	./up-to-date -d debian.csv
+	./up-to-date -u ubuntu.csv
+
+.PHONY: build install test up-to-date
