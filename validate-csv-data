@@ -19,11 +19,11 @@
 
 """Validates a given Debian or Ubuntu distro-info CSV file."""
 
-import argparse
 import csv
-import datetime
-import os
 import sys
+
+from lib.tools import convert_date, main
+
 
 _COLUMNS = {
     "debian": ("version", "codename", "series", "created", "release", "eol",
@@ -44,22 +44,11 @@ _STRINGS = {
     "ubuntu": ("version", "codename", "series"),
 }
 
-def convert_date(string):
-    """Convert a date string in ISO 8601 into a datetime object."""
-    if not string:
-        date = None
-    else:
-        parts = [int(x) for x in string.split("-")]
-        if len(parts) == 3:
-            (year, month, day) = parts
-            date = datetime.date(year, month, day)
-        else:
-            raise ValueError("Date not in ISO 8601 format.")
-    return date
 
 def error(filename, line, message, *args):
     """Prints an error message"""
     print("%s:%i: %s." % (filename, line, message % args), file=sys.stderr)
+
 
 def validate(filename, distro):
     """Validates a given CSV file.
@@ -130,29 +119,6 @@ def validate(filename, distro):
 
     return failures == 0
 
-def main():
-    """Main function with command line parameter parsing."""
-    script_name = os.path.basename(sys.argv[0])
-    usage = "%s [-h] -d|-u csv-file" % (script_name)
-    parser = argparse.ArgumentParser(usage=usage)
-
-    parser.add_argument("-d", "--debian", dest="debian", action="store_true",
-                        default=False, help="validate a Debian CSV file")
-    parser.add_argument("-u", "--ubuntu", dest="ubuntu", action="store_true",
-                        default=False, help="validate an Ubuntu CSV file")
-    parser.add_argument("csv_file", metavar="csv-file",
-                        help="CSV file to validate")
-
-    args = parser.parse_args()
-    if len([x for x in [args.debian, args.ubuntu] if x]) != 1:
-        parser.error("You have to select exactly one of --debian, --ubuntu.")
-
-    if args.debian:
-        distro = "debian"
-    else:
-        distro = "ubuntu"
-
-    return int(not validate(args.csv_file, distro))
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(validate))
