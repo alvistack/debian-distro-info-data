@@ -1,3 +1,9 @@
+distro-info-data (0.39~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 07 Nov 2018 12:22:37 -0800
+
 distro-info-data (0.39) unstable; urgency=medium
 
   * Add Ubuntu 19.04 Disco Dingo. (LP: #1800656)
