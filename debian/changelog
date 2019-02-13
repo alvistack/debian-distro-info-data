@@ -1,8 +1,17 @@
-distro-info-data (0.37~bpo9+1) stretch-backports; urgency=medium
+distro-info-data (0.38) unstable; urgency=medium
 
-  * Rebuild for stretch-backports.
+  * Migrate VCS to salsa.debian.org.
+  * Add Ubuntu 18.10 Cosmic Cuttlefish. (LP: #1769992)
+  * Correct EOL date for zesty. (LP: #1743936)
+  * Adjust provisional creation date for Debian 11 Bullseye to August 2019.
+    The release-team expects Buster to release "some time mid-2019".
+  * Add Debian 12 Bookworm, with a provisional creation date.
+  * Declare: Rules-Requires-Root: no.
+  * Switch copyright Format URL to https.
+  * Update copyright.
+  * Bump Standards-Version to 4.1.4, no changes needed.
 
- -- Stefano Rivera <stefanor@debian.org>  Mon, 30 Oct 2017 11:53:20 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 08 May 2018 12:34:42 -0700
 
 distro-info-data (0.37) unstable; urgency=medium
 
