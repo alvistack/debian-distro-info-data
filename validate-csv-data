@@ -25,9 +25,9 @@ import sys
 _COLUMNS = {
     "debian": ("version", "codename", "series", "created", "release", "eol"),
     "ubuntu": ("version", "codename", "series", "created", "release", "eol",
-               "eol-server"),
+               "eol-server", "eol-esm"),
 }
-_DATES = ("created", "release", "eol", "eol-server")
+_DATES = ("created", "release", "eol", "eol-server", "eol-esm")
 _EARLIER_DATES = (
     ("created", "release"),
     ("release", "eol"),
@@ -108,7 +108,7 @@ def validate(filename, distro):
             if date2 in row and row[date2]:
                 if date1 in row and row[date1]:
                     # date1 needs to be earlier than date2
-                    if row[date1] >= row[date2]:
+                    if row[date1] > row[date2]:
                         msg = ("Date %s of column `%s' needs to be later "
                                "than %s of column `%s'")
                         error(filename, csvreader.line_num, msg,

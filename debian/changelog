@@ -1,3 +1,10 @@
+distro-info-data (0.37ubuntu0.3) bionic; urgency=medium
+
+  * Add in eol-server and eol-esm dates for all Ubuntu LTS releases.
+    (LP: #1814976, #1808038)
+
+ -- Brian Murray <brian@ubuntu.com>  Thu, 07 Mar 2019 11:29:06 -0800
+
 distro-info-data (0.37ubuntu0.2) bionic; urgency=medium
 
   * Copy data from 0.39:
