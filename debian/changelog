@@ -5,6 +5,7 @@ distro-info-data (0.46) UNRELEASED; urgency=medium
     (Closes: #922090, LP: #1814976).
   * Add "eol-esm" column: EOL for Ubuntu Extended Security Maintenance support.
     (LP: #1808038)
+  * Drop ancient Replaces: distro-info (<< 0.3~). No longer needed.
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
 
