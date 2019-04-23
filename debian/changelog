@@ -1,3 +1,9 @@
+distro-info-data (0.40) UNRELEASED; urgency=medium
+
+  * Correct EOL date for trusty. (LP: #1825553)
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
+
 distro-info-data (0.39) unstable; urgency=medium
 
   * Add Ubuntu 19.04 Disco Dingo. (LP: #1800656)
