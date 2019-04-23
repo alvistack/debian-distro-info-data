@@ -3,6 +3,8 @@ distro-info-data (0.46) UNRELEASED; urgency=medium
   * Add "eol-server" dates matching "eol", for LTS releases, as there hasn't
     been a distinction between the two, for a while.
     (Closes: #922090, LP: #1814976).
+  * Add "eol-esm" column: EOL for Ubuntu Extended Security Maintenance support.
+    (LP: #1808038)
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
 

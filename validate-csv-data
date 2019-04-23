@@ -28,13 +28,14 @@ import sys
 _COLUMNS = {
     "debian": ("version", "codename", "series", "created", "release", "eol"),
     "ubuntu": ("version", "codename", "series", "created", "release", "eol",
-               "eol-server"),
+               "eol-server", "eol-esm"),
 }
-_DATES = ("created", "release", "eol", "eol-server")
+_DATES = ("created", "release", "eol", "eol-server", "eol-esm")
 _EARLIER_DATES = (
     ("created", "release"),
     ("release", "eol"),
     ("eol", "eol-server"),
+    ("eol", "eol-esm"),
 )
 _STRINGS = {
     "debian": ("codename", "series"),
