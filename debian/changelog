@@ -1,3 +1,9 @@
+distro-info-data (0.40~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 29 Apr 2019 14:18:50 -0700
+
 distro-info-data (0.40) unstable; urgency=medium
 
   * Correct EOL date for trusty. (LP: #1825553)
