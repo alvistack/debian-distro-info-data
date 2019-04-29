@@ -1,3 +1,11 @@
+distro-info-data (0.40) unstable; urgency=medium
+
+  * Correct EOL date for trusty. (LP: #1825553)
+  * Add Ubuntu 19.10, with a provisional animal name. (LP: #1825379)
+  * Bump Standards-Version to 4.3.0, no changes needed.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 12:14:38 -0700
+
 distro-info-data (0.39~bpo9+1) stretch-backports; urgency=medium
 
   * Rebuild for stretch-backports.
