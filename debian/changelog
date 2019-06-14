@@ -1,10 +1,10 @@
-distro-info-data (0.41) UNRELEASED; urgency=medium
+distro-info-data (0.41) unstable; urgency=medium
 
   * Add final animal name for Ubuntu 19.10 Eoan Ermine.
   * Set release date for Buster (and matching creation date for Bullseye).
     It has been announced.
 
- -- Stefano Rivera <stefanor@debian.org>  Tue, 07 May 2019 17:07:30 +0300
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 14 Jun 2019 10:50:04 -0700
 
 distro-info-data (0.40) unstable; urgency=medium
 
