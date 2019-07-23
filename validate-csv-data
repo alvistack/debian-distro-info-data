@@ -14,6 +14,9 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
+# pylint: disable=invalid-name
+# pylint: enable=invalid-name
+
 """Validates a given Debian or Ubuntu distro-info CSV file."""
 
 import argparse
@@ -63,9 +66,9 @@ def validate(filename, distro):
     failures = 0
     content = open(filename).readlines()
     # Remove comments
-    for line in range(len(content)):
-        if content[line].startswith("#"):
-            content[line] = "\n"
+    for counter, line in enumerate(content):
+        if line.startswith("#"):
+            content[counter] = "\n"
     csvreader = csv.DictReader(content)
     for row in csvreader:
         # Check for missing columns
@@ -94,7 +97,7 @@ def validate(filename, distro):
                 except ValueError:
                     msg = "Invalid date `%s' in column `%s'"
                     error(filename, csvreader.line_num, msg, row[column],
-                           column)
+                          column)
                     failures += 1
                     row[column] = None
         # Check required date columns
@@ -146,10 +149,7 @@ def main():
     else:
         distro = "ubuntu"
 
-    if validate(args.csv_file, distro):
-        return 0
-    else:
-        return 1
+    return int(not validate(args.csv_file, distro))
 
 if __name__ == "__main__":
     sys.exit(main())
