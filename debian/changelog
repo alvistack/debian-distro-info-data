@@ -1,9 +1,9 @@
-distro-info-data (0.43) UNRELEASED; urgency=medium
+distro-info-data (0.43) unstable; urgency=medium
 
   * Add Ubuntu 20.04 LTS, Focal Fossa.
   * Bump Standards-Version to 4.4.1, no changes needed.
 
- -- Stefano Rivera <stefanor@debian.org>  Thu, 17 Oct 2019 12:20:44 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 17 Oct 2019 13:10:30 -0700
 
 distro-info-data (0.42) unstable; urgency=medium
 
