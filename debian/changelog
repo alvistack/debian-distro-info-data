@@ -1,3 +1,10 @@
+distro-info-data (0.37ubuntu0.6) bionic; urgency=medium
+
+  * Copy data from 0.40ubuntu3:
+    - Add Ubuntu 20.04 LTS, with 5 years LTS and 10 years ESM. (LP: #1848688)
+
+ -- Łukasz 'sil2100' Zemczak <lukasz.zemczak@ubuntu.com>  Fri, 18 Oct 2019 10:17:24 +0100
+
 distro-info-data (0.37ubuntu0.5) bionic; urgency=medium
 
   * Copy data from 0.40ubuntu2:
