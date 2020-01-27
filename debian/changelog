@@ -1,3 +1,10 @@
+distro-info-data (0.43ubuntu1) focal; urgency=medium
+
+  * Merge from Debian unstable.  Remaining changes:
+    - Add in eol-server and eol-esm dates for all Ubuntu LTS releases.
+
+ -- dann frazier <dannf@ubuntu.com>  Mon, 27 Jan 2020 14:28:18 -0700
+
 distro-info-data (0.43) unstable; urgency=medium
 
   * Add Ubuntu 20.04 LTS, Focal Fossa.
@@ -24,6 +31,28 @@ distro-info-data (0.41) unstable; urgency=medium
 
  -- Stefano Rivera <stefanor@debian.org>  Fri, 14 Jun 2019 10:50:04 -0700
 
+distro-info-data (0.40ubuntu3) eoan; urgency=medium
+
+  * Add Ubuntu 20.04 LTS, with 5 years LTS and 10 years ESM.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 16 Oct 2019 18:25:47 +0100
+
+distro-info-data (0.40ubuntu2) eoan; urgency=medium
+
+  * Replace Eoan EANIMAL placeholder with Eoan Ermine.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Mon, 06 May 2019 14:15:12 -0600
+
+distro-info-data (0.40ubuntu1) eoan; urgency=low
+
+  * Merge from Debian unstable.  Remaining changes:
+    - Add in eol-server and eol-esm dates for all Ubuntu LTS releases.
+  * Dropped changes, included in Debian:
+    - Add Ubuntu 19.10 Eoan EANIMAL.
+    - Correct EOL dates for trusty.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Sat, 04 May 2019 21:09:28 -0700
+
 distro-info-data (0.40) unstable; urgency=medium
 
   * Correct EOL date for trusty. (LP: #1825553)
@@ -31,6 +60,32 @@ distro-info-data (0.40) unstable; urgency=medium
   * Bump Standards-Version to 4.3.0, no changes needed.
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 12:14:38 -0700
+
+distro-info-data (0.39ubuntu4) eoan; urgency=medium
+
+  * Correct EOL dates for trusty with slightly more vigor.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 23 Apr 2019 04:04:35 -0600
+
+distro-info-data (0.39ubuntu3) eoan; urgency=medium
+
+  * Correct EOL dates for trusty (LP: #1825553)
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 23 Apr 2019 03:58:34 -0600
+
+distro-info-data (0.39ubuntu2) disco; urgency=medium
+
+  * Copy data from 0.39ubuntu2:
+    - Add Ubuntu 19.10 Eoan EANIMAL. (LP: #1825379)
+
+ -- Łukasz 'sil2100' Zemczak <lukasz.zemczak@ubuntu.com>  Thu, 18 Apr 2019 16:14:15 +0100
+
+distro-info-data (0.39ubuntu1) disco; urgency=medium
+
+  * Add in eol-server and eol-esm dates for all Ubuntu LTS releases.
+    (LP: #1814976, #1808038)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 11 Feb 2019 14:01:01 -0800
 
 distro-info-data (0.39) unstable; urgency=medium
 
@@ -347,3 +402,4 @@ distro-info (0.1) unstable; urgency=low
   * Initial release (Closes: #559761)
 
  -- Benjamin Drung <bdrung@debian.org>  Sun, 19 Jun 2011 00:08:57 +0200
+
