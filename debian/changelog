@@ -1,3 +1,12 @@
+distro-info-data (0.37ubuntu0.7) bionic; urgency=medium
+
+  * Copy from Debian unstable (0.44):
+    - Set release date for Buster (and matching creation date for Bullseye).
+    - Add Ubuntu 20.10, Groovy Gorilla. (LP: #1874843)
+    - Add a guessed EOL date for Debian Stretch.
+
+ -- Stefano Rivera <stefanor@ubuntu.com>  Fri, 24 Apr 2020 09:05:08 -0700
+
 distro-info-data (0.37ubuntu0.6) bionic; urgency=medium
 
   * Copy data from 0.40ubuntu3:
