@@ -2,6 +2,7 @@ distro-info-data (0.44) UNRELEASED; urgency=medium
 
   * Add Ubuntu 20.10, Groovy Gorilla.
   * Add a guessed EOL date for Debian Stretch.
+  * Bump Standards-Version to 4.5.0, no changes needed.
 
  -- Stefano Rivera <stefanor@debian.org>  Fri, 24 Apr 2020 08:17:40 -0700
 
