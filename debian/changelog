@@ -1,3 +1,18 @@
+distro-info-data (0.41+deb10u2) buster; urgency=medium
+
+  * Update data to 0.44:
+    - Add Ubuntu 20.10, Groovy Gorilla.
+    - Add a guessed EOL date for Debian Stretch.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 24 Apr 2020 09:24:59 -0700
+
+distro-info-data (0.41+deb10u1) buster; urgency=medium
+
+  [ Stefano Rivera ]
+  * Add Ubuntu 20.04 LTS, Focal Fossa.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Thu, 31 Oct 2019 12:00:12 +0100
+
 distro-info-data (0.41~bpo9+1) stretch-backports; urgency=medium
 
   * Rebuild for stretch-backports.
