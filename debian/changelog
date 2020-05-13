@@ -1,3 +1,9 @@
+distro-info-data (0.41+deb10u2~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 13 May 2020 13:48:21 -0700
+
 distro-info-data (0.41+deb10u2) buster; urgency=medium
 
   * Update data to 0.44:
