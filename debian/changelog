@@ -1,8 +1,8 @@
-distro-info-data (0.43ubuntu1.3) focal; urgency=medium
+distro-info-data (0.43ubuntu1.4) focal; urgency=medium
 
   * Add Ubuntu 21.04, Hirsute Hippo (LP: #1901361).
 
- -- Łukasz 'sil2100' Zemczak <lukasz.zemczak@ubuntu.com>  Mon, 26 Oct 2020 15:23:20 +0100
+ -- Brian Murray <brian@ubuntu.com>  Wed, 28 Oct 2020 12:18:28 -0700
 
 distro-info-data (0.43ubuntu1.1) focal; urgency=medium
 
