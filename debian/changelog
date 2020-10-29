@@ -1,8 +1,8 @@
-distro-info-data (0.45) UNRELEASED; urgency=medium
+distro-info-data (0.45) unstable; urgency=medium
 
   * Add Ubuntu 21.04, Hirsute Hippo.
 
- -- Stefano Rivera <stefanor@debian.org>  Thu, 29 Oct 2020 13:20:02 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 29 Oct 2020 13:21:12 -0700
 
 distro-info-data (0.44) unstable; urgency=medium
 
