@@ -1,3 +1,10 @@
+distro-info-data (0.41+deb10u3) buster; urgency=medium
+
+  * Update data to 0.45:
+    - Add Ubuntu 21.04, Hirsute Hippo.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 02 Nov 2020 12:44:14 -0800
+
 distro-info-data (0.41+deb10u2) buster; urgency=medium
 
   * Update data to 0.44:
