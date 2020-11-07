@@ -24,6 +24,15 @@ where $RELEASE is the name of your release.
 If there isn't an update available yet, you should be able to install the
 latest version from Debian/unstable.
 
+## Online data
+
+Please don't scrape the git interface directly.
+
+This data is available publicly at:
+
+* https://debian.pages.debian.net/distro-info-data/debian.csv
+* https://debian.pages.debian.net/distro-info-data/ubuntu.csv
+
 ## Data format
 
 The data is in CSV format. They are parsed by code specific to the
