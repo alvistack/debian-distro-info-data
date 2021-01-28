@@ -1,4 +1,4 @@
-version,codename,series,created,release,eol
+version,codename,series,created,release,eol,eol-lts
 1.1,Buzz,buzz,1993-08-16,1996-06-17,1997-06-05
 1.2,Rex,rex,1996-06-17,1996-12-12,1998-06-05
 1.3,Bo,bo,1996-12-12,1997-06-05,1999-03-09
@@ -9,11 +9,11 @@ version,codename,series,created,release,eol
 3.1,Sarge,sarge,2002-07-19,2005-06-06,2008-03-30
 4.0,Etch,etch,2005-06-06,2007-04-08,2010-02-15
 5.0,Lenny,lenny,2007-04-08,2009-02-14,2012-02-06
-6.0,Squeeze,squeeze,2009-02-14,2011-02-06,2014-05-31
-7,Wheezy,wheezy,2011-02-06,2013-05-04,2016-04-26
-8,Jessie,jessie,2013-05-04,2015-04-25,2018-06-06
-9,Stretch,stretch,2015-04-25,2017-06-17,2020-07-06
-10,Buster,buster,2017-06-17,2019-07-06
+6.0,Squeeze,squeeze,2009-02-14,2011-02-06,2014-05-31,2016-02-29
+7,Wheezy,wheezy,2011-02-06,2013-05-04,2016-04-26,2018-05-31
+8,Jessie,jessie,2013-05-04,2015-04-25,2018-06-06,2020-06-30
+9,Stretch,stretch,2015-04-25,2017-06-17,2020-07-06,2022-06-30
+10,Buster,buster,2017-06-17,2019-07-06,2022-07-06,2024-06-30
 11,Bullseye,bullseye,2019-07-06
 12,Bookworm,bookworm,2021-08-01
 ,Sid,sid,1993-08-16

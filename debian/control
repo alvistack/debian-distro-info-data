@@ -13,8 +13,7 @@ Package: distro-info-data
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Breaks: distro-info (<< 0.3~)
-Replaces: distro-info (<< 0.3~)
+Breaks: distro-info (<< 1.0~)
 Description: information about the distributions' releases (data files)
  Information about all releases of Debian and Ubuntu. The distro-info script
  will give you the codename for e.g. the latest stable release of your

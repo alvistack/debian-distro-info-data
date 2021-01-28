@@ -26,15 +26,18 @@ import os
 import sys
 
 _COLUMNS = {
-    "debian": ("version", "codename", "series", "created", "release", "eol"),
+    "debian": ("version", "codename", "series", "created", "release", "eol",
+               "eol-lts"),
     "ubuntu": ("version", "codename", "series", "created", "release", "eol",
-               "eol-server"),
+               "eol-server", "eol-esm"),
 }
-_DATES = ("created", "release", "eol", "eol-server")
+_DATES = ("created", "release", "eol", "eol-server", "eol-esm", "eol-lts")
 _EARLIER_DATES = (
     ("created", "release"),
     ("release", "eol"),
     ("eol", "eol-server"),
+    ("eol", "eol-esm"),
+    ("eol", "eol-lts"),
 )
 _STRINGS = {
     "debian": ("codename", "series"),
@@ -111,8 +114,8 @@ def validate(filename, distro):
             if date2 in row and row[date2]:
                 if date1 in row and row[date1]:
                     # date1 needs to be earlier than date2
-                    if row[date1] >= row[date2]:
-                        msg = ("Date %s of column `%s' needs to be later "
+                    if row[date1] > row[date2]:
+                        msg = ("Date %s of column `%s' needs to be >= "
                                "than %s of column `%s'")
                         error(filename, csvreader.line_num, msg,
                               row[date2].isoformat(), date2,

@@ -1,3 +1,16 @@
+distro-info-data (0.46) UNRELEASED; urgency=medium
+
+  * Add "eol-server" dates matching "eol", for LTS releases, as there hasn't
+    been a distinction between the two, for a while.
+    (Closes: #922090, LP: #1814976).
+  * Add "eol-esm" column: EOL for Ubuntu Extended Security Maintenance support.
+    (LP: #1808038)
+  * Drop ancient Replaces: distro-info (<< 0.3~). No longer needed.
+  * Add "eol-lts" for Debian LTS (Closes: #782685)
+  * Add estimated dates for Buster EOL and Buster LTS EOL.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
+
 distro-info-data (0.45) unstable; urgency=medium
 
   * Add Ubuntu 21.04, Hirsute Hippo.
