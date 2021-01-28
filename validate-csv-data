@@ -26,7 +26,16 @@ from lib.tools import convert_date, main
 
 
 _COLUMNS = {
-    "debian": ("version", "codename", "series", "created", "release", "eol", "eol-lts"),
+    "debian": (
+        "version",
+        "codename",
+        "series",
+        "created",
+        "release",
+        "eol",
+        "eol-lts",
+        "eol-elts",
+    ),
     "ubuntu": (
         "version",
         "codename",
@@ -38,13 +47,14 @@ _COLUMNS = {
         "eol-esm",
     ),
 }
-_DATES = ("created", "release", "eol", "eol-server", "eol-esm", "eol-lts")
+_DATES = ("created", "release", "eol", "eol-server", "eol-esm", "eol-lts", "eol-elts")
 _EARLIER_DATES = (
     ("created", "release"),
     ("release", "eol"),
     ("eol", "eol-server"),
     ("eol", "eol-esm"),
     ("eol", "eol-lts"),
+    ("eol-lts", "eol-elts"),
 )
 _STRINGS = {
     "debian": ("codename", "series"),

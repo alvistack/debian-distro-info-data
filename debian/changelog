@@ -16,6 +16,7 @@ distro-info-data (0.46) UNRELEASED; urgency=medium
   * Add "up-to-date" testing tool.
   * Add an autopkgtest, running the validation and up-to-date tests.
   * "black" Python.
+  * Add "eol-elts" for Debian ELTS.
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
 
