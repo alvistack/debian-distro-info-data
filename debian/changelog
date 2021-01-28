@@ -8,6 +8,7 @@ distro-info-data (0.46) UNRELEASED; urgency=medium
   * Drop ancient Replaces: distro-info (<< 0.3~). No longer needed.
   * Add "eol-lts" for Debian LTS (Closes: #782685)
   * Add estimated dates for Buster EOL and Buster LTS EOL.
+  * Publish the data to GitLab pages. (Closes: #973904)
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
 

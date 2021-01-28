@@ -23,3 +23,8 @@ where $RELEASE is the name of your release.
 
 If there isn't an update available yet, you should be able to install the
 latest version from Debian/unstable.
+
+Or pull it from the Internet at:
+
+* https://debian.pages.debian.net/distro-info-data/debian.csv
+* https://debian.pages.debian.net/distro-info-data/ubuntu.csv
