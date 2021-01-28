@@ -10,6 +10,7 @@ distro-info-data (0.46) UNRELEASED; urgency=medium
   * Add estimated dates for Buster EOL and Buster LTS EOL.
   * Publish the data to GitLab pages. (Closes: #973904)
   * Bump Standards-Version to 4.5.1, no changes needed.
+  * Bump copyright years.
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
 
