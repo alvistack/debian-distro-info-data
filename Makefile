@@ -1,4 +1,5 @@
 PREFIX ?= /usr
+PYTHON_SOURCES=lib up-to-date validate-csv-data
 
 build:
 
@@ -15,6 +16,9 @@ up-to-date:
 	./up-to-date -u ubuntu.csv
 
 black:
-	black validate-csv-data up-to-date lib/
+	black $(PYTHON_SOURCES)
 
-.PHONY: black build install test up-to-date
+pylint:
+	pylint $(PYTHON_SOURCES)
+
+.PHONY: black build install pylint test up-to-date

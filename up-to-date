@@ -36,9 +36,9 @@ def validate(filename, distro):
     """
     content = open(filename).readlines()
     # Remove comments
-    for line in range(len(content)):
-        if content[line].startswith("#"):
-            content[line] = "\n"
+    for no, line in enumerate(content):
+        if line.startswith("#"):
+            content[no] = "\n"
     csvreader = csv.DictReader(content)
     today = datetime.datetime.utcnow().date()
 
