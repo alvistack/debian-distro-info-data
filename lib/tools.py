@@ -38,12 +38,23 @@ def main(validation_function):
     usage = "%s [-h] -d|-u csv-file" % (script_name)
     parser = argparse.ArgumentParser(usage=usage)
 
-    parser.add_argument("-d", "--debian", dest="debian", action="store_true",
-                        default=False, help="validate a Debian CSV file")
-    parser.add_argument("-u", "--ubuntu", dest="ubuntu", action="store_true",
-                        default=False, help="validate an Ubuntu CSV file")
-    parser.add_argument("csv_file", metavar="csv-file",
-                        help="CSV file to validate")
+    parser.add_argument(
+        "-d",
+        "--debian",
+        dest="debian",
+        action="store_true",
+        default=False,
+        help="validate a Debian CSV file",
+    )
+    parser.add_argument(
+        "-u",
+        "--ubuntu",
+        dest="ubuntu",
+        action="store_true",
+        default=False,
+        help="validate an Ubuntu CSV file",
+    )
+    parser.add_argument("csv_file", metavar="csv-file", help="CSV file to validate")
 
     args = parser.parse_args()
     if len([x for x in [args.debian, args.ubuntu] if x]) != 1:

@@ -26,10 +26,17 @@ from lib.tools import convert_date, main
 
 
 _COLUMNS = {
-    "debian": ("version", "codename", "series", "created", "release", "eol",
-               "eol-lts"),
-    "ubuntu": ("version", "codename", "series", "created", "release", "eol",
-               "eol-server", "eol-esm"),
+    "debian": ("version", "codename", "series", "created", "release", "eol", "eol-lts"),
+    "ubuntu": (
+        "version",
+        "codename",
+        "series",
+        "created",
+        "release",
+        "eol",
+        "eol-server",
+        "eol-esm",
+    ),
 }
 _DATES = ("created", "release", "eol", "eol-server", "eol-esm", "eol-lts")
 _EARLIER_DATES = (
@@ -88,8 +95,7 @@ def validate(filename, distro):
                     row[column] = convert_date(row[column])
                 except ValueError:
                     msg = "Invalid date `%s' in column `%s'"
-                    error(filename, csvreader.line_num, msg, row[column],
-                          column)
+                    error(filename, csvreader.line_num, msg, row[column], column)
                     failures += 1
                     row[column] = None
         # Check required date columns
@@ -104,16 +110,26 @@ def validate(filename, distro):
                 if date1 in row and row[date1]:
                     # date1 needs to be earlier than date2
                     if row[date1] > row[date2]:
-                        msg = ("Date %s of column `%s' needs to be >= "
-                               "than %s of column `%s'")
-                        error(filename, csvreader.line_num, msg,
-                              row[date2].isoformat(), date2,
-                              row[date1].isoformat(), date1)
+                        msg = (
+                            "Date %s of column `%s' needs to be >= "
+                            "than %s of column `%s'"
+                        )
+                        error(
+                            filename,
+                            csvreader.line_num,
+                            msg,
+                            row[date2].isoformat(),
+                            date2,
+                            row[date1].isoformat(),
+                            date1,
+                        )
                         failures += 1
                 else:
                     # date1 needs to be specified if date1 is specified
-                    msg = ("A date needs to be specified in column `%s' due "
-                           "to the given date in column `%s'")
+                    msg = (
+                        "A date needs to be specified in column `%s' due "
+                        "to the given date in column `%s'"
+                    )
                     error(filename, csvreader.line_num, msg, date1, date2)
                     failures += 1
 

@@ -24,9 +24,10 @@ import sys
 from lib.tools import convert_date, main
 
 ROLLING_FOREVER = {
-    'debian': ('sid', 'experimental'),
-    'ubuntu': (),
+    "debian": ("sid", "experimental"),
+    "ubuntu": (),
 }
+
 
 def validate(filename, distro):
     """Validates that the given CSV file is current.
@@ -46,27 +47,32 @@ def validate(filename, distro):
     for row in csvreader:
         created = False
         released = False
-        if row['series'] in ROLLING_FOREVER[distro]:
+        if row["series"] in ROLLING_FOREVER[distro]:
             continue
-        if row['created']:
-            created = today >= convert_date(row['created'])
-        if row['release']:
-            released = today >= convert_date(row['release'])
+        if row["created"]:
+            created = today >= convert_date(row["created"])
+        if row["release"]:
+            released = today >= convert_date(row["release"])
         if created:
             if not released:
-                dev_releases.append(row['codename'])
+                dev_releases.append(row["codename"])
             else:
-                last_release = row['codename']
+                last_release = row["codename"]
 
     if len(dev_releases) == 1:
         return True
 
     if len(dev_releases) > 1:
-        print('Multiple current development %s releases: %s'
-              % (distro, dev_releases), file=sys.stderr)
+        print(
+            "Multiple current development %s releases: %s" % (distro, dev_releases),
+            file=sys.stderr,
+        )
     else:
-        print('No current development %s release. %s is now released.'
-              % (distro, last_release), file=sys.stderr)
+        print(
+            "No current development %s release. %s is now released."
+            % (distro, last_release),
+            file=sys.stderr,
+        )
 
     return False
 

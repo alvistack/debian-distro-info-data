@@ -14,4 +14,7 @@ up-to-date:
 	./up-to-date -d debian.csv
 	./up-to-date -u ubuntu.csv
 
-.PHONY: build install test up-to-date
+black:
+	black validate-csv-data up-to-date lib/
+
+.PHONY: black build install test up-to-date
