@@ -12,6 +12,7 @@ distro-info-data (0.46) UNRELEASED; urgency=medium
   * Bump Standards-Version to 4.5.1, no changes needed.
   * Bump copyright years.
   * Correct the EOL date for Debian Jessie.
+  * Add Debian 13 "Trixie", with a rough date.
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
 
