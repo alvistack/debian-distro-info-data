@@ -1,3 +1,2 @@
-Tests: up-to-date
 Depends: @builddeps@
 Test-Command: make up-to-date
