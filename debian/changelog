@@ -1,4 +1,4 @@
-distro-info-data (0.46) UNRELEASED; urgency=medium
+distro-info-data (0.46) unstable; urgency=medium
 
   * Add "eol-server" dates matching "eol", for LTS releases, as there hasn't
     been a distinction between the two, for a while.
@@ -20,7 +20,7 @@ distro-info-data (0.46) UNRELEASED; urgency=medium
   * Tweak eol and eol-esm dates, by a couple of days, for Ubuntu 6.10, 9.10,
     10.04, 12.04, 15.04, 15.10, 19.04 to match announced EOL dates.
 
- -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Apr 2019 10:24:13 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 29 Jan 2021 13:41:20 -0700
 
 distro-info-data (0.45) unstable; urgency=medium
 
