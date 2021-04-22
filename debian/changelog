@@ -1,3 +1,9 @@
+distro-info-data (0.37ubuntu0.10) bionic; urgency=medium
+
+  * Add Ubuntu 21.10, Impish Indri (LP: #1925484)
+
+ -- Iain Lane <iain@orangesquash.org.uk>  Thu, 22 Apr 2021 13:14:53 +0100
+
 distro-info-data (0.37ubuntu0.9) bionic; urgency=medium
 
   * Add Ubuntu 21.04, Hirsute Hippo (LP: #1901361).
