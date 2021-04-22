@@ -33,3 +33,4 @@ version,codename,series,created,release,eol,eol-server,eol-esm
 20.04 LTS,Focal Fossa,focal,2019-10-17,2020-04-23,2025-04-23,2025-04-23,2030-04-23
 20.10,Groovy Gorilla,groovy,2020-04-23,2020-10-22,2021-07-22
 21.04,Hirsute Hippo,hirsute,2020-10-22,2021-04-22,2022-01-22
+21.10,Impish Indri,impish,2021-04-22,2021-10-14,2022-07-14

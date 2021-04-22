@@ -1,3 +1,9 @@
+distro-info-data (0.47) UNRELEASED; urgency=medium
+
+  * Add Ubuntu 21.04, Impish Indri.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 22 Apr 2021 10:29:24 -0400
+
 distro-info-data (0.46) unstable; urgency=medium
 
   * Add "eol-server" dates matching "eol", for LTS releases, as there hasn't
