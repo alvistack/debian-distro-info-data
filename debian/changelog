@@ -1,6 +1,8 @@
 distro-info-data (0.48) UNRELEASED; urgency=medium
 
   * Correct typo in changelog.
+  * Set a release date for Debian bullseye (and bookworm creation), based on
+    the release team's tentative estimate.
 
  -- Stefano Rivera <stefanor@debian.org>  Fri, 23 Apr 2021 08:30:36 -0400
 

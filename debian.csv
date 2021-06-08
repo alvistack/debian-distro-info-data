@@ -14,8 +14,8 @@ version,codename,series,created,release,eol,eol-lts,eol-elts
 8,Jessie,jessie,2013-05-04,2015-04-25,2018-06-17,2020-06-30,2022-06-30
 9,Stretch,stretch,2015-04-25,2017-06-17,2020-07-06,2022-06-30
 10,Buster,buster,2017-06-17,2019-07-06,2022-07-06,2024-06-30
-11,Bullseye,bullseye,2019-07-06
-12,Bookworm,bookworm,2021-08-01
+11,Bullseye,bullseye,2019-07-06,2021-07-31,2024-07-31
+12,Bookworm,bookworm,2021-07-31
 13,Trixie,trixie,2023-08-01
 ,Sid,sid,1993-08-16
 ,Experimental,experimental,1993-08-16
