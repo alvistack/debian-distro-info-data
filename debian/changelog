@@ -1,3 +1,9 @@
+distro-info-data (0.49) UNRELEASED; urgency=medium
+
+  * Move Ubuntu EoLs off weekends.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 15 Jun 2021 13:30:21 -0400
+
 distro-info-data (0.48) unstable; urgency=medium
 
   * Correct typo in changelog.
