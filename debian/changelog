@@ -1,3 +1,9 @@
+distro-info-data (0.50) UNRELEASED; urgency=medium
+
+  * Update buster's release day to bullseye's (tentative) release date +1y.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 16 Jun 2021 08:43:56 -0400
+
 distro-info-data (0.49) unstable; urgency=medium
 
   * Move Ubuntu EoLs off weekends.
