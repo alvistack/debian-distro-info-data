@@ -1,9 +1,9 @@
-distro-info-data (0.50) UNRELEASED; urgency=medium
+distro-info-data (0.50) unstable; urgency=medium
 
   * Update buster's EOL day to bullseye's (tentative) release date +1y.
   * Add ELTS dates for stretch and buster at LTS + 2 years, this seems likely.
 
- -- Stefano Rivera <stefanor@debian.org>  Wed, 16 Jun 2021 08:43:56 -0400
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 17 Jun 2021 11:01:52 -0400
 
 distro-info-data (0.49) unstable; urgency=medium
 
