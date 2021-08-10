@@ -1,3 +1,9 @@
+distro-info-data (0.37ubuntu0.11) bionic; urgency=medium
+
+  * Move Ubuntu EoLs off weekend days. (LP: #1939457)
+
+ -- Brian Murray <brian@ubuntu.com>  Tue, 10 Aug 2021 15:18:17 -0700
+
 distro-info-data (0.37ubuntu0.10) bionic; urgency=medium
 
   * Add Ubuntu 21.10, Impish Indri (LP: #1925484)
