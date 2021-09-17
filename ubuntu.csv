@@ -32,4 +32,5 @@ version,codename,series,created,release,eol,eol-server
 19.10,Eoan Ermine,eoan,2019-04-18,2019-10-17,2020-07-17
 20.04 LTS,Focal Fossa,focal,2019-10-17,2020-04-23,2025-04-23
 20.10,Groovy Gorilla,groovy,2020-04-23,2020-10-22,2021-07-22
-21.04,Hirsute Hippo,hirsute,2020-10-22,2021-04-22,2022-01-22
+21.04,Hirsute Hippo,hirsute,2020-10-22,2021-04-22,2022-01-20
+21.10,Impish Indri,impish,2021-04-22,2021-10-14,2022-07-14
