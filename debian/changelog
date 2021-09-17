@@ -1,3 +1,17 @@
+distro-info-data (0.41+deb10u4) buster; urgency=medium
+
+  * Update data to 0.51, without new columns:
+    - Add estimated date for Buster EOL.
+    - Correct the EOL date for Debian Jessie.
+    - Add Debian 13 "Trixie", with a rough date.
+    - Add Ubuntu 21.10, Impish Indri.
+    - Move Ubuntu EoLs off weekends.
+    - Validate that Ubuntu EoLs occur during the week.
+    - Set bullseye's release date, bookworm's creation date, and buster's EoL
+      date based on the updated planned bullseye release date.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 17 Sep 2021 15:30:21 -0700
+
 distro-info-data (0.41+deb10u3) buster; urgency=medium
 
   * Update data to 0.45:
