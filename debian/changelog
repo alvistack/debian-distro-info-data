@@ -1,3 +1,9 @@
+distro-info-data (0.51+deb11u1) UNRELEASED; urgency=medium
+
+  * Extend Ubuntu 14.04 and 16.04 ESM out to 10 years in total.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 23 Sep 2021 09:18:34 -0700
+
 distro-info-data (0.51) unstable; urgency=medium
 
   * Update bullseye's release date, bookworm's creation date, and buster's EoL
