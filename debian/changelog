@@ -1,3 +1,10 @@
+distro-info-data (0.37ubuntu0.12) bionic-security; urgency=medium
+
+  * Update ubuntu.csv for trusty and xenial ESM extended dates
+    (LP: #1946137).
+
+ -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 06 Oct 2021 09:29:20 -0300
+
 distro-info-data (0.37ubuntu0.11) bionic; urgency=medium
 
   * Move Ubuntu EoLs off weekend days. (LP: #1939457)
