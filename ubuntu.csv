@@ -18,11 +18,11 @@ version,codename,series,created,release,eol,eol-server,eol-esm
 12.10,Quantal Quetzal,quantal,2012-04-26,2012-10-18,2014-05-16
 13.04,Raring Ringtail,raring,2012-10-18,2013-04-25,2014-01-27
 13.10,Saucy Salamander,saucy,2013-04-25,2013-10-17,2014-07-17
-14.04 LTS,Trusty Tahr,trusty,2013-10-17,2014-04-17,2019-04-25,2019-04-25,2022-04-25
+14.04 LTS,Trusty Tahr,trusty,2013-10-17,2014-04-17,2019-04-25,2019-04-25,2024-04-25
 14.10,Utopic Unicorn,utopic,2014-04-17,2014-10-23,2015-07-23
 15.04,Vivid Vervet,vivid,2014-10-23,2015-04-23,2016-01-23
 15.10,Wily Werewolf,wily,2015-04-23,2015-10-22,2016-07-22
-16.04 LTS,Xenial Xerus,xenial,2015-10-22,2016-04-21,2021-04-21,2021-04-21,2024-04-23
+16.04 LTS,Xenial Xerus,xenial,2015-10-22,2016-04-21,2021-04-21,2021-04-21,2026-04-23
 16.10,Yakkety Yak,yakkety,2016-04-21,2016-10-13,2017-07-20
 17.04,Zesty Zapus,zesty,2016-10-13,2017-04-13,2018-01-13
 17.10,Artful Aardvark,artful,2017-04-13,2017-10-19,2018-07-19
