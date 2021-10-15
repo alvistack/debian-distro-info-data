@@ -1,3 +1,10 @@
+distro-info-data (0.37ubuntu0.13) bionic; urgency=medium
+
+  * Add Ubuntu 22.04, Jammy Jellyfish (LP: #1947368).
+  * Update ubuntu.csv contents to what we had in hirsute+.
+
+ -- Łukasz 'sil2100' Zemczak <lukasz.zemczak@ubuntu.com>  Fri, 15 Oct 2021 14:49:26 +0200
+
 distro-info-data (0.37ubuntu0.12) bionic-security; urgency=medium
 
   * Update ubuntu.csv for trusty and xenial ESM extended dates
