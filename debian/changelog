@@ -1,9 +1,10 @@
-distro-info-data (0.51+deb11u1) UNRELEASED; urgency=medium
+distro-info-data (0.51+deb11u1) bullseye; urgency=medium
 
-  * Extend Ubuntu 14.04 and 16.04 ESM out to 10 years in total.
-  * Add Ubuntu 22.04 LTS, Jammy Jellyfish.
+  * Update data to 0.52:
+    - Extend Ubuntu 14.04 and 16.04 ESM out to 10 years in total.
+    - Add Ubuntu 22.04 LTS, Jammy Jellyfish.
 
- -- Stefano Rivera <stefanor@debian.org>  Thu, 23 Sep 2021 09:18:34 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 09 Dec 2021 09:40:48 -0400
 
 distro-info-data (0.51) unstable; urgency=medium
 
