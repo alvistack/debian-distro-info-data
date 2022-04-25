@@ -2,6 +2,7 @@ distro-info-data (0.41+deb10u5) buster; urgency=medium
 
   * Update data to 0.53, without new columns:
     - Add Ubuntu 22.04 LTS, Jammy Jellyfish.
+    - Add Ubuntu 22.10, Kinetic Kudu.
 
  -- Stefano Rivera <stefanor@debian.org>  Fri, 17 Sep 2021 15:30:21 -0700
 
