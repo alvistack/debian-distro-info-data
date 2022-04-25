@@ -1,8 +1,8 @@
-distro-info-data (0.53) UNRELEASED; urgency=medium
+distro-info-data (0.53) unstable; urgency=medium
 
   * Add Ubuntu 22.10, Kinetic Kudu.
 
- -- Stefano Rivera <stefanor@debian.org>  Mon, 25 Apr 2022 11:41:24 -0400
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 25 Apr 2022 11:48:33 -0400
 
 distro-info-data (0.52) unstable; urgency=medium
 
