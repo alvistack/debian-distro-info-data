@@ -1,3 +1,10 @@
+distro-info-data (0.51+deb11u2) bullseye; urgency=medium
+
+  * Update data to 0.53:
+    - Add Ubuntu 22.10, Kinetic Kudu.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 25 Apr 2022 20:32:17 -0400
+
 distro-info-data (0.51+deb11u1) bullseye; urgency=medium
 
   * Update data to 0.52:
