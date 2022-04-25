@@ -1,3 +1,9 @@
+distro-info-data (0.53) UNRELEASED; urgency=medium
+
+  * Add Ubuntu 22.10, Kinetic Kudu.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 25 Apr 2022 11:41:24 -0400
+
 distro-info-data (0.52) unstable; urgency=medium
 
   * Extend Ubuntu 14.04 and 16.04 ESM out to 10 years in total.
