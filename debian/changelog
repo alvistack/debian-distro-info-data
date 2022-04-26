@@ -4,7 +4,7 @@ distro-info-data (0.41+deb10u5) buster; urgency=medium
     - Add Ubuntu 22.04 LTS, Jammy Jellyfish.
     - Add Ubuntu 22.10, Kinetic Kudu.
 
- -- Stefano Rivera <stefanor@debian.org>  Fri, 17 Sep 2021 15:30:21 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 25 Apr 2022 20:18:22 -0400
 
 distro-info-data (0.41+deb10u4) buster; urgency=medium
 
