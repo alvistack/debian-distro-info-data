@@ -35,3 +35,4 @@ version,codename,series,created,release,eol,eol-server,eol-esm
 21.04,Hirsute Hippo,hirsute,2020-10-22,2021-04-22,2022-01-20
 21.10,Impish Indri,impish,2021-04-22,2021-10-14,2022-07-14
 22.04 LTS,Jammy Jellyfish,jammy,2021-10-14,2022-04-21,2027-04-21,2027-04-21,2032-04-21
+22.10,Kinetic Kudu,kinetic,2022-04-21,2022-10-20,2023-07-20

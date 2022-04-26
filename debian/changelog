@@ -1,3 +1,9 @@
+distro-info-data (0.37ubuntu0.14) bionic; urgency=medium
+
+  * Add Ubuntu 22.10, Kinetic Kudu (LP: #1970227)
+
+ -- Paride Legovini <paride@ubuntu.com>  Tue, 26 Apr 2022 19:26:52 +0200
+
 distro-info-data (0.37ubuntu0.13) bionic; urgency=medium
 
   * Add Ubuntu 22.04, Jammy Jellyfish (LP: #1947368).
