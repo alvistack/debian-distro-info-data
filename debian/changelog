@@ -1,3 +1,9 @@
+distro-info-data (0.52ubuntu0.1) jammy; urgency=medium
+
+  * Add Ubuntu 22.10, Kinetic Kudu (LP: #1970227)
+
+ -- Paride Legovini <paride@ubuntu.com>  Tue, 26 Apr 2022 19:20:20 +0200
+
 distro-info-data (0.52) unstable; urgency=medium
 
   * Extend Ubuntu 14.04 and 16.04 ESM out to 10 years in total.

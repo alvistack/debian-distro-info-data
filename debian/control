@@ -1,7 +1,8 @@
 Source: distro-info-data
 Section: devel
 Priority: optional
-Maintainer: Benjamin Drung <bdrung@debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Benjamin Drung <bdrung@debian.org>
 Uploaders: Stefano Rivera <stefanor@debian.org>
 Build-Depends: debhelper-compat (= 12), python3
 Standards-Version: 4.5.1
