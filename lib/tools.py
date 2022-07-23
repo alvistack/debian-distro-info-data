@@ -56,7 +56,9 @@ def main(validation_function):
         default=False,
         help="validate an Ubuntu CSV file",
     )
-    parser.add_argument("csv_file", metavar="csv-file", help="CSV file to validate")
+    parser.add_argument(
+        "csv_file", metavar="csv-file", help="CSV file to validate"
+    )
 
     args = parser.parse_args()
     if len([x for x in [args.debian, args.ubuntu] if x]) != 1:

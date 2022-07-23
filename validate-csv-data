@@ -47,7 +47,15 @@ _COLUMNS = {
         "eol-esm",
     ),
 }
-_DATES = ("created", "release", "eol", "eol-server", "eol-esm", "eol-lts", "eol-elts")
+_DATES = (
+    "created",
+    "release",
+    "eol",
+    "eol-server",
+    "eol-esm",
+    "eol-lts",
+    "eol-elts",
+)
 _EARLIER_DATES = (
     ("created", "release"),
     ("release", "eol"),
@@ -105,7 +113,9 @@ def validate(filename, distro):
                     row[column] = convert_date(row[column])
                 except ValueError:
                     msg = "Invalid date `%s' in column `%s'"
-                    error(filename, csvreader.line_num, msg, row[column], column)
+                    error(
+                        filename, csvreader.line_num, msg, row[column], column
+                    )
                     failures += 1
                     row[column] = None
         # Check required date columns
@@ -152,7 +162,12 @@ def validate(filename, distro):
                 if eol_date.weekday() > 5 and eol_date >= date(2021, 1, 1):
                     msg = "%s for %s lands on a weekend (%s)"
                     error(
-                        filename, csvreader.line_num, msg, column, row["codename"], date
+                        filename,
+                        csvreader.line_num,
+                        msg,
+                        column,
+                        row["codename"],
+                        date,
                     )
 
     return failures == 0

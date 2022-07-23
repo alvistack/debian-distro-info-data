@@ -61,7 +61,8 @@ def validate(filename, distro):
 
     if len(dev_releases) > 1:
         print(
-            "Multiple current development %s releases: %s" % (distro, dev_releases),
+            "Multiple current development %s releases: %s"
+            % (distro, dev_releases),
             file=sys.stderr,
         )
     else:
