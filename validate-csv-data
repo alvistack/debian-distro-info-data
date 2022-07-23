@@ -25,7 +25,6 @@ from datetime import date
 
 from lib.tools import convert_date, main
 
-
 _COLUMNS = {
     "debian": (
         "version",
@@ -144,16 +143,17 @@ def validate(filename, distro):
                     error(filename, csvreader.line_num, msg, date1, date2)
                     failures += 1
         # Check that Ubuntu EOL lands on a weekday
-        if distro == 'ubuntu':
+        if distro == "ubuntu":
             for column, eol_date in row.items():
-                if not column.startswith('eol'):
+                if not column.startswith("eol"):
                     continue
                 if not eol_date:
                     continue
                 if eol_date.weekday() > 5 and eol_date >= date(2021, 1, 1):
-                    msg = '%s for %s lands on a weekend (%s)'
-                    error(filename, csvreader.line_num, msg, column,
-                          row['codename'], date)
+                    msg = "%s for %s lands on a weekend (%s)"
+                    error(
+                        filename, csvreader.line_num, msg, column, row["codename"], date
+                    )
 
     return failures == 0
 

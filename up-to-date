@@ -23,10 +23,7 @@ import sys
 
 from lib.tools import convert_date, main
 
-ROLLING_FOREVER = {
-    "debian": ("sid", "experimental"),
-    "ubuntu": (),
-}
+ROLLING_FOREVER = {"debian": ("sid", "experimental"), "ubuntu": ()}
 
 
 def validate(filename, distro):
