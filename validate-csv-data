@@ -132,8 +132,8 @@ def validate(filename, distro):
                 else:
                     # date1 needs to be specified if date1 is specified
                     msg = (
-                        f"A date needs to be specified in column `{date1}' due "
-                        f"to the given date in column `{date2}'"
+                        f"A date needs to be specified in column `{date1}'"
+                        f" due to the given date in column `{date2}'"
                     )
                     error(filename, csvreader.line_num, msg)
                     failures += 1
