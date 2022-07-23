@@ -15,13 +15,15 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
+# pylint: disable=invalid-name
+# pylint: enable=invalid-name
+
 """Validates that the data is up-to-date."""
 
-import csv
 import datetime
 import sys
 
-from lib.tools import convert_date, main
+from lib.tools import convert_date, get_csv_dict_reader, main
 
 ROLLING_FOREVER = {"debian": ("sid", "experimental"), "ubuntu": ()}
 
@@ -31,12 +33,7 @@ def validate(filename, distro):
 
     Returns True if the given CSV file is current and otherwise False.
     """
-    content = open(filename).readlines()
-    # Remove comments
-    for no, line in enumerate(content):
-        if line.startswith("#"):
-            content[no] = "\n"
-    csvreader = csv.DictReader(content)
+    csvreader = get_csv_dict_reader(filename)
     today = datetime.datetime.utcnow().date()
 
     last_release = None
@@ -61,14 +58,13 @@ def validate(filename, distro):
 
     if len(dev_releases) > 1:
         print(
-            "Multiple current development %s releases: %s"
-            % (distro, dev_releases),
+            f"Multiple current development {distro} releases: {dev_releases}",
             file=sys.stderr,
         )
     else:
         print(
-            "No current development %s release. %s is now released."
-            % (distro, last_release),
+            f"No current development {distro} release."
+            f" {last_release} is now released.",
             file=sys.stderr,
         )
 

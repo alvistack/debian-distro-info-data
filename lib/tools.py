@@ -15,9 +15,8 @@
 """Common parsing and utility functions"""
 
 import argparse
+import csv
 import datetime
-import os
-import sys
 
 
 def convert_date(string):
@@ -34,11 +33,23 @@ def convert_date(string):
     return date
 
 
+def get_csv_dict_reader(filename: str) -> csv.DictReader:
+    """Read the given CSV file and return a `csv.DictReader`.
+
+    Comments (lines starting with #) will be removed.
+    """
+    with open(filename, encoding="ascii") as csv_file:
+        content = csv_file.readlines()
+    # Remove comments
+    for counter, line in enumerate(content):
+        if line.startswith("#"):
+            content[counter] = "\n"
+    return csv.DictReader(content)
+
+
 def main(validation_function):
     """Main function with command line parameter parsing."""
-    script_name = os.path.basename(sys.argv[0])
-    usage = "%s [-h] -d|-u csv-file" % (script_name)
-    parser = argparse.ArgumentParser(usage=usage)
+    parser = argparse.ArgumentParser(usage="%(prog)s [-h] -d|-u csv-file")
 
     parser.add_argument(
         "-d",

@@ -19,11 +19,10 @@
 
 """Validates a given Debian or Ubuntu distro-info CSV file."""
 
-import csv
 import sys
 from datetime import date
 
-from lib.tools import convert_date, main
+from lib.tools import convert_date, get_csv_dict_reader, main
 
 _COLUMNS = {
     "debian": (
@@ -70,9 +69,9 @@ _STRINGS = {
 }
 
 
-def error(filename, line, message, *args):
+def error(filename, line, message):
     """Prints an error message"""
-    print("%s:%i: %s." % (filename, line, message % args), file=sys.stderr)
+    print(f"{filename}:{line}: {message}.", file=sys.stderr)
 
 
 def validate(filename, distro):
@@ -81,30 +80,25 @@ def validate(filename, distro):
     Returns True if the given CSV file is valid and otherwise False.
     """
     failures = 0
-    content = open(filename).readlines()
-    # Remove comments
-    for counter, line in enumerate(content):
-        if line.startswith("#"):
-            content[counter] = "\n"
-    csvreader = csv.DictReader(content)
+    csvreader = get_csv_dict_reader(filename)
     for row in csvreader:
         # Check for missing columns
         for column in _COLUMNS[distro]:
-            if not column in row:
-                msg = "Column `%s' is missing"
-                error(filename, csvreader.line_num, msg, column)
+            if column not in row:
+                msg = f"Column `{column}' is missing"
+                error(filename, csvreader.line_num, msg)
                 failures += 1
         # Check for additinal columns
         for column in row:
-            if not column in _COLUMNS[distro]:
-                msg = "Additional column `%s' is specified"
-                error(filename, csvreader.line_num, msg, column)
+            if column not in _COLUMNS[distro]:
+                msg = f"Additional column `{column}' is specified"
+                error(filename, csvreader.line_num, msg)
                 failures += 1
         # Check required strings columns
         for column in _STRINGS[distro]:
             if column in row and not row[column]:
-                msg = "Empty column `%s' specified"
-                error(filename, csvreader.line_num, msg, column)
+                msg = f"Empty column `{column}' specified"
+                error(filename, csvreader.line_num, msg)
                 failures += 1
         # Check dates
         for column in _DATES:
@@ -112,17 +106,15 @@ def validate(filename, distro):
                 try:
                     row[column] = convert_date(row[column])
                 except ValueError:
-                    msg = "Invalid date `%s' in column `%s'"
-                    error(
-                        filename, csvreader.line_num, msg, row[column], column
-                    )
+                    msg = f"Invalid date `{row[column]}' in column `{column}'"
+                    error(filename, csvreader.line_num, msg)
                     failures += 1
                     row[column] = None
         # Check required date columns
         column = "created"
         if column in row and not row[column]:
-            msg = "No date specified in column `%s'"
-            error(filename, csvreader.line_num, msg, column)
+            msg = f"No date specified in column `{column}'"
+            error(filename, csvreader.line_num, msg)
             failures += 1
         # Compare dates
         for (date1, date2) in _EARLIER_DATES:
@@ -131,26 +123,19 @@ def validate(filename, distro):
                     # date1 needs to be earlier than date2
                     if row[date1] > row[date2]:
                         msg = (
-                            "Date %s of column `%s' needs to be >= "
-                            "than %s of column `%s'"
+                            f"Date {row[date2].isoformat()} of column"
+                            f" `{date2}' needs to be >= than"
+                            f" {row[date1].isoformat()} of column `{date1}'"
                         )
-                        error(
-                            filename,
-                            csvreader.line_num,
-                            msg,
-                            row[date2].isoformat(),
-                            date2,
-                            row[date1].isoformat(),
-                            date1,
-                        )
+                        error(filename, csvreader.line_num, msg)
                         failures += 1
                 else:
                     # date1 needs to be specified if date1 is specified
                     msg = (
-                        "A date needs to be specified in column `%s' due "
-                        "to the given date in column `%s'"
+                        f"A date needs to be specified in column `{date1}' due "
+                        f"to the given date in column `{date2}'"
                     )
-                    error(filename, csvreader.line_num, msg, date1, date2)
+                    error(filename, csvreader.line_num, msg)
                     failures += 1
         # Check that Ubuntu EOL lands on a weekday
         if distro == "ubuntu":
@@ -160,15 +145,11 @@ def validate(filename, distro):
                 if not eol_date:
                     continue
                 if eol_date.weekday() > 5 and eol_date >= date(2021, 1, 1):
-                    msg = "%s for %s lands on a weekend (%s)"
-                    error(
-                        filename,
-                        csvreader.line_num,
-                        msg,
-                        column,
-                        row["codename"],
-                        date,
+                    msg = (
+                        f"{column} for {row['codename']}"
+                        f" lands on a weekend ({date})"
                     )
+                    error(filename, csvreader.line_num, msg)
 
     return failures == 0
 
