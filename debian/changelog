@@ -1,3 +1,14 @@
+distro-info-data (0.54) unstable; urgency=medium
+
+  * Update Debian ELTS dates to ~10 years of support (Closes: #1014837)
+  * Correct release date of Debian 8 (jessie) to 2015-04-26
+  * Restrict maximum line length to 79 characters
+  * Fix all pylint complaints (except too-many-branches)
+  * Switch to debhelper 13
+  * Bump Standards-Version to 4.6.1 (no changes needed)
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 23 Jul 2022 17:31:19 +0200
+
 distro-info-data (0.53) unstable; urgency=medium
 
   * Add Ubuntu 22.10, Kinetic Kudu.
