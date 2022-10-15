@@ -1,3 +1,9 @@
+distro-info-data (0.55) UNRELEASED; urgency=medium
+
+  * Mark python3 Build-Depend as <!nocheck>.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 15 Oct 2022 21:41:57 +0200
+
 distro-info-data (0.54) unstable; urgency=medium
 
   * Update Debian ELTS dates to ~10 years of support (Closes: #1014837)
