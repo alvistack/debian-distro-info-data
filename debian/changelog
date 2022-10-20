@@ -1,6 +1,7 @@
 distro-info-data (0.55) UNRELEASED; urgency=medium
 
   * Mark python3 Build-Depend as <!nocheck>.
+  * Add dates for Ubuntu L series (NO NAME YET) (LP: #1993667)
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 15 Oct 2022 21:41:57 +0200
 
