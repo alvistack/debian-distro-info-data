@@ -1,4 +1,4 @@
-distro-info-data (0.55) UNRELEASED; urgency=medium
+distro-info-data (0.55) unstable; urgency=medium
 
   [ Stefano Rivera ]
   * Mark python3 Build-Depend as <!nocheck>.
@@ -6,7 +6,7 @@ distro-info-data (0.55) UNRELEASED; urgency=medium
   [ Thomas Bechtold ]
   * Add dates for Ubuntu 23.04, Lunar Lobster (LP: #1993667)
 
- -- Thomas Bechtold <thomas.bechtold@canonical.com>  Fri, 28 Oct 2022 10:24:22 +0200
+ -- Benjamin Drung <bdrung@debian.org>  Fri, 28 Oct 2022 11:09:05 +0200
 
 distro-info-data (0.54) unstable; urgency=medium
 
