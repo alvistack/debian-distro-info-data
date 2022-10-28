@@ -1,9 +1,12 @@
 distro-info-data (0.55) UNRELEASED; urgency=medium
 
+  [ Stefano Rivera ]
   * Mark python3 Build-Depend as <!nocheck>.
-  * Add dates for Ubuntu L series (NO NAME YET) (LP: #1993667)
 
- -- Stefano Rivera <stefanor@debian.org>  Sat, 15 Oct 2022 21:41:57 +0200
+  [ Thomas Bechtold ]
+  * Add dates for Ubuntu 23.04, Lunar Lobster (LP: #1993667)
+
+ -- Thomas Bechtold <thomas.bechtold@canonical.com>  Fri, 28 Oct 2022 10:24:22 +0200
 
 distro-info-data (0.54) unstable; urgency=medium
 
