@@ -1,3 +1,9 @@
+distro-info-data (0.56) UNRELEASED; urgency=medium
+
+  * Add Debian 14 "forky" with a vague creation date.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
+
 distro-info-data (0.55) unstable; urgency=medium
 
   [ Stefano Rivera ]
