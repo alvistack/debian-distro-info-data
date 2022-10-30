@@ -1,10 +1,10 @@
-distro-info-data (0.41+deb10u6) UNRELEASED; urgency=medium
+distro-info-data (0.41+deb10u6) buster-security; urgency=medium
 
   * Update data to 0.55, without new columns:
     - Correct release date of Debian 8 (jessie) to 2015-04-26
     - Add dates for Ubuntu 23.04, Lunar Lobster (LP: #1993667)
 
- -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 13:53:55 +0200
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:03:00 +0200
 
 distro-info-data (0.41+deb10u5) buster; urgency=medium
 
