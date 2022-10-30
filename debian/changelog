@@ -1,3 +1,10 @@
+distro-info-data (0.51+deb11u4) UNRELEASED; urgency=medium
+
+  * Update data to 0.58:
+    - Add Debian 14 "forky" with a vague creation date.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
+
 distro-info-data (0.51+deb11u3) bullseye; urgency=medium
 
   * Update data to 0.55:
