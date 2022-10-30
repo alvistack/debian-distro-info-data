@@ -1,3 +1,10 @@
+distro-info-data (0.36~bpo8+3) jessie-lts; urgency=medium
+
+  * Update data to 0.58, without new columns:
+    - Add Debian 14 "forky" with a vague creation date.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
+
 distro-info-data (0.36~bpo8+2) jessie-lts; urgency=medium
 
   * Bring over updates so far (up to 0.36 data), previously found in
