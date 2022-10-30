@@ -1,3 +1,24 @@
+distro-info-data (0.41+deb10u2~bpo9+2) stretch-lts; urgency=medium
+
+  * Bring over updates so far (up to 0.44 data), previously found in
+    stretch-backports, to provide a smooth update for users with or without
+    the previous stretch-backports updates installed.
+  * Update the data to 0.55, without new columns:
+    - Add Ubuntu 21.04, Hirsute Hippo.
+    - Add a date for Buster EOL.
+    - Correct the EOL date for Debian Jessie.
+    - Add Debian 13 "Trixie", with a rough date.
+    - Add Ubuntu 21.10, Impish Indri.
+    - Move Ubuntu EoLs off weekends.
+    - Validate that Ubuntu EoLs occur during the week.
+    - Set bullseye's release date.
+    - Add Ubuntu 22.04 LTS, Jammy Jellyfish.
+    - Add Ubuntu 22.10, Kinetic Kudu.
+    - Correct release date of Debian 8 (jessie) to 2015-04-26
+    - Add dates for Ubuntu 23.04, Lunar Lobster (LP: #1993667)
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 13 May 2020 13:48:21 -0700
+
 distro-info-data (0.41+deb10u2~bpo9+1) stretch-backports; urgency=medium
 
   * Rebuild for stretch-backports.
