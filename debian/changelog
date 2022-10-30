@@ -1,7 +1,39 @@
+distro-info-data (0.36~bpo8+2) jessie-lts; urgency=medium
+
+  * Bring over updates so far (up to 0.36 data), previously found in
+    jessie-backports, to provide a smooth update for users with or without
+    the previous jessie-backports updates installed.
+  * Update the data to 0.55, without new columns:
+    - Add Ubuntu 18.04 LTS Bionic Beaver.
+    - Add Ubuntu 18.10 Cosmic Cuttlefish. (LP: #1769992)
+    - Correct EOL date for zesty. (LP: #1743936)
+    - Add Debian 12 Bookworm.
+    - Add Ubuntu 19.04 Disco Dingo. (LP: #1800656)
+    - Correct EOL date for trusty. (LP: #1825553)
+    - Add Ubuntu 19.10, Eoan Ermine. (LP: #1825379)
+    - Set release date for Buster.
+    - Add Ubuntu 20.04 LTS, Focal Fossa.
+    - Add Ubuntu 20.10, Groovy Gorilla.
+    - Add an EOL date for Debian Stretch.
+    - Add Ubuntu 21.04, Hirsute Hippo.
+    - Add a date for Buster EOL.
+    - Correct the EOL date for Debian Jessie.
+    - Add Debian 13 "Trixie", with a rough date.
+    - Add Ubuntu 21.10, Impish Indri.
+    - Move Ubuntu EoLs off weekends.
+    - Validate that Ubuntu EoLs occur during the week.
+    - Set bullseye's release date.
+    - Add Ubuntu 22.04 LTS, Jammy Jellyfish.
+    - Add Ubuntu 22.10, Kinetic Kudu.
+    - Correct release date of Debian 8 (jessie) to 2015-04-26
+    - Add dates for Ubuntu 23.04, Lunar Lobster (LP: #1993667)
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 04 Jun 2017 07:20:00 -0700
+
 distro-info-data (0.36~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports.
-  * Add myself to uploaders. 
+  * Add myself to uploaders.
 
  -- Holger Levsen <holger@debian.org>  Sat, 29 Jul 2017 21:29:57 -0400
 
