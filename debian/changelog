@@ -1,8 +1,12 @@
-distro-info-data (0.56) UNRELEASED; urgency=medium
+distro-info-data (0.56) unstable; urgency=medium
 
+  [ Stefano Rivera ]
   * Add Debian 14 "forky" with a vague creation date.
 
- -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
+  [ Brian Murray ]
+  * Correct Update 23.04 release date to 2023-04-20
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 31 Oct 2022 14:51:00 +0100
 
 distro-info-data (0.55) unstable; urgency=medium
 
