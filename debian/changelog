@@ -1,3 +1,10 @@
+distro-info-data (0.37ubuntu0.15) bionic; urgency=medium
+
+  * Add Ubuntu 23.04, Lunar Lobster (LP: #1993667)
+  * Point Vcs-Git and Vcs-Browser to salsa.debian.org
+
+ -- Benjamin Drung <bdrung@ubuntu.com>  Mon, 31 Oct 2022 15:15:33 +0100
+
 distro-info-data (0.37ubuntu0.14) bionic; urgency=medium
 
   * Add Ubuntu 22.10, Kinetic Kudu (LP: #1970227)
