@@ -1,3 +1,9 @@
+distro-info-data (0.52ubuntu0.2) jammy; urgency=medium
+
+  * Add Ubuntu 23.04, Lunar Lobster (LP: #1993667)
+
+ -- Benjamin Drung <bdrung@ubuntu.com>  Mon, 31 Oct 2022 15:09:45 +0100
+
 distro-info-data (0.52ubuntu0.1) jammy; urgency=medium
 
   * Add Ubuntu 22.10, Kinetic Kudu (LP: #1970227)
