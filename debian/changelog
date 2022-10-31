@@ -1,3 +1,9 @@
+distro-info-data (0.54ubuntu0.1) kinetic; urgency=medium
+
+  * Add Ubuntu 23.04, Lunar Lobster (LP: #1993667)
+
+ -- Benjamin Drung <bdrung@ubuntu.com>  Mon, 31 Oct 2022 15:02:09 +0100
+
 distro-info-data (0.54) unstable; urgency=medium
 
   * Update Debian ELTS dates to ~10 years of support (Closes: #1014837)
