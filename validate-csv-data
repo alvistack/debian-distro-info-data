@@ -21,7 +21,7 @@ import datetime
 import optparse
 import os
 import sys
-from datetime import date
+from datetime import date, timedelta
 
 _COLUMNS = {
     "debian": ("version", "codename", "series", "created", "release", "eol"),
@@ -137,6 +137,16 @@ def validate(filename, distro):
                         ).format(column=column, row=row, eol_date=eol_date)
                         error(filename, csvreader.line_num, msg)
                         failures += 1
+            if row["version"].endswith("LTS") and row["release"] >= date(2018, 1, 1):
+                eol_date = row["eol"]
+                june = eol_date.replace(day=1, month=6)
+                if june - eol_date > timedelta(days=7):
+                    msg = (
+                        "eol for {row[codename]}"
+                        " is missing ESM overlap period ({eol_date})"
+                    ).format(row=row, eol_date=eol_date)
+                    error(filename, csvreader.line_num, msg)
+                    failures += 1
 
     return failures == 0
 
