@@ -1,3 +1,9 @@
+distro-info-data (0.57) UNRELEASED; urgency=medium
+
+  * Document Ubuntu ESM overlap period (LP: #2003949)
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Thu, 26 Jan 2023 13:43:15 +0000
+
 distro-info-data (0.56) unstable; urgency=medium
 
   [ Stefano Rivera ]
