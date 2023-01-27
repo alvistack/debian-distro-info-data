@@ -148,7 +148,7 @@ def validate(filename, distro):
                     if eol_date.weekday() == 0 or eol_date.weekday() >= 4:
                         msg = (
                             f"{column} for {row['codename']}"
-                            f" lands outside Tuesday-Thursday ({date})"
+                            f" lands outside Tuesday-Thursday ({eol_date})"
                         )
                         error(filename, csvreader.line_num, msg)
 
