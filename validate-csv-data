@@ -20,7 +20,7 @@
 """Validates a given Debian or Ubuntu distro-info CSV file."""
 
 import sys
-from datetime import date
+from datetime import date, timedelta
 
 from lib.tools import convert_date, get_csv_dict_reader, main
 
@@ -151,6 +151,17 @@ def validate(filename, distro):
                             f" lands outside Tuesday-Thursday ({eol_date})"
                         )
                         error(filename, csvreader.line_num, msg)
+            if row["version"].endswith("LTS") and row["release"] >= date(2018, 1, 1):
+                eol_date = row["eol"]
+                assert eol_date == row["eol-server"]
+                june = eol_date.replace(day=1, month=6)
+                if june - eol_date > timedelta(days=7):
+                    msg = (
+                        f"eol for {row['codename']}"
+                        f" is missing ESM overlap period ({eol_date})"
+                    )
+                    error(filename, csvreader.line_num, msg)
+                    failures += 1
 
     return failures == 0
 
