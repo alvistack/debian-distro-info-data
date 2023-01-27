@@ -151,6 +151,7 @@ def validate(filename, distro):
                             f" lands outside Tuesday-Thursday ({eol_date})"
                         )
                         error(filename, csvreader.line_num, msg)
+                        failures += 1
             if row["version"].endswith("LTS") and row["release"] >= date(2018, 1, 1):
                 eol_date = row["eol"]
                 assert eol_date == row["eol-server"]
