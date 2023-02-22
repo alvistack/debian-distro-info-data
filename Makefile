@@ -16,7 +16,7 @@ up-to-date:
 	./up-to-date -u ubuntu.csv
 
 black:
-	black -C -l 79 $(PYTHON_SOURCES)
+	black -C $(PYTHON_SOURCES)
 
 pylint:
 	pylint $(PYTHON_SOURCES)
