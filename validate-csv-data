@@ -119,24 +119,29 @@ def _check_required_date_columns(row: RowDict, error: ErrorLogger) -> None:
 
 
 def _compare_dates(row: RowDict, error: ErrorLogger) -> None:
-    for (date1, date2) in _EARLIER_DATES:
-        if date2 in row and row[date2]:
-            if date1 in row and row[date1]:
-                # date1 needs to be earlier than date2
-                if row[date1] > row[date2]:
-                    msg = (
-                        f"Date {row[date2].isoformat()} of column"
-                        f" `{date2}' needs to be >= than"
-                        f" {row[date1].isoformat()} of column `{date1}'"
-                    )
-                    error(msg)
-            else:
-                # date1 needs to be specified if date1 is specified
-                msg = (
-                    f"A date needs to be specified in column `{date1}'"
-                    f" due to the given date in column `{date2}'"
-                )
-                error(msg)
+    for (date1_column, date2_column) in _EARLIER_DATES:
+        date2 = row.get(date2_column)
+        if date2 is None:
+            continue
+        date1 = row.get(date1_column)
+        if date1 is None:
+            # date1 needs to be specified if date2 is specified
+            msg = (
+                f"A date needs to be specified in column `{date1_column}'"
+                f" due to the given date in column `{date2_column}'"
+            )
+            error(msg)
+            continue
+        assert isinstance(date1, date)
+        assert isinstance(date2, date)
+        # date1 needs to be earlier than date2
+        if date1 > date2:
+            msg = (
+                f"Date {date2.isoformat()} of column"
+                f" `{date2_column}' needs to be >= than"
+                f" {date1.isoformat()} of column `{date1_column}'"
+            )
+            error(msg)
 
 
 def _check_that_eol_lands_on_a_weekday(row: RowDict, error: ErrorLogger) -> None:
@@ -145,6 +150,7 @@ def _check_that_eol_lands_on_a_weekday(row: RowDict, error: ErrorLogger) -> None
             continue
         if not eol_date:
             continue
+        assert isinstance(eol_date, date)
         if eol_date >= date(2021, 1, 1):
             if eol_date.weekday() == 0 or eol_date.weekday() >= 4:
                 msg = (
@@ -155,8 +161,13 @@ def _check_that_eol_lands_on_a_weekday(row: RowDict, error: ErrorLogger) -> None
 
 
 def _check_that_esm_has_overlap_period(row: RowDict, error: ErrorLogger) -> None:
-    if row["version"].endswith("LTS") and row["release"] >= date(2018, 1, 1):
+    version = row.get("version")
+    release = row.get("release")
+    assert isinstance(version, str)
+    assert isinstance(release, date)
+    if version.endswith("LTS") and release >= date(2018, 1, 1):
         eol_date = row["eol"]
+        assert isinstance(eol_date, date)
         assert eol_date == row["eol-server"]
         june = eol_date.replace(day=1, month=6)
         if june - eol_date > timedelta(days=7):
