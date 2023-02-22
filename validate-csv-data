@@ -19,6 +19,7 @@
 
 """Validates a given Debian or Ubuntu distro-info CSV file."""
 
+import csv
 import sys
 from datetime import date, timedelta
 
@@ -61,9 +62,17 @@ _STRINGS = {
 }
 
 
-def error(filename, line, message):
-    """Prints an error message"""
-    print(f"{filename}:{line}: {message}.", file=sys.stderr)
+class ErrorLogger:  # pylint: disable=too-few-public-methods
+    """Print an error message and count failures."""
+
+    def __init__(self, csvreader: csv.DictReader, filename: str) -> None:
+        self.csvreader = csvreader
+        self.filename = filename
+        self.failures = 0
+
+    def __call__(self, message: str) -> None:
+        print(f"{self.filename}:{self.csvreader.line_num}: {message}.", file=sys.stderr)
+        self.failures += 1
 
 
 def validate(filename, distro):
@@ -71,27 +80,24 @@ def validate(filename, distro):
 
     Returns True if the given CSV file is valid and otherwise False.
     """
-    failures = 0
     csvreader = get_csv_dict_reader(filename)
+    error = ErrorLogger(csvreader, filename)
     for row in csvreader:
         # Check for missing columns
         for column in _COLUMNS[distro]:
             if column not in row:
                 msg = f"Column `{column}' is missing"
-                error(filename, csvreader.line_num, msg)
-                failures += 1
+                error(msg)
         # Check for additinal columns
         for column in row:
             if column not in _COLUMNS[distro]:
                 msg = f"Additional column `{column}' is specified"
-                error(filename, csvreader.line_num, msg)
-                failures += 1
+                error(msg)
         # Check required strings columns
         for column in _STRINGS[distro]:
             if column in row and not row[column]:
                 msg = f"Empty column `{column}' specified"
-                error(filename, csvreader.line_num, msg)
-                failures += 1
+                error(msg)
         # Check dates
         for column in _DATES:
             if column in row:
@@ -99,15 +105,13 @@ def validate(filename, distro):
                     row[column] = convert_date(row[column])
                 except ValueError:
                     msg = f"Invalid date `{row[column]}' in column `{column}'"
-                    error(filename, csvreader.line_num, msg)
-                    failures += 1
+                    error(msg)
                     row[column] = None
         # Check required date columns
         column = "created"
         if column in row and not row[column]:
             msg = f"No date specified in column `{column}'"
-            error(filename, csvreader.line_num, msg)
-            failures += 1
+            error(msg)
         # Compare dates
         for (date1, date2) in _EARLIER_DATES:
             if date2 in row and row[date2]:
@@ -119,16 +123,14 @@ def validate(filename, distro):
                             f" `{date2}' needs to be >= than"
                             f" {row[date1].isoformat()} of column `{date1}'"
                         )
-                        error(filename, csvreader.line_num, msg)
-                        failures += 1
+                        error(msg)
                 else:
                     # date1 needs to be specified if date1 is specified
                     msg = (
                         f"A date needs to be specified in column `{date1}'"
                         f" due to the given date in column `{date2}'"
                     )
-                    error(filename, csvreader.line_num, msg)
-                    failures += 1
+                    error(msg)
         # Check that Ubuntu EOL lands on a weekday
         if distro == "ubuntu":
             for column, eol_date in row.items():
@@ -142,8 +144,7 @@ def validate(filename, distro):
                             f"{column} for {row['codename']}"
                             f" lands outside Tuesday-Thursday ({eol_date})"
                         )
-                        error(filename, csvreader.line_num, msg)
-                        failures += 1
+                        error(msg)
             if row["version"].endswith("LTS") and row["release"] >= date(2018, 1, 1):
                 eol_date = row["eol"]
                 assert eol_date == row["eol-server"]
@@ -153,10 +154,9 @@ def validate(filename, distro):
                         f"eol for {row['codename']}"
                         f" is missing ESM overlap period ({eol_date})"
                     )
-                    error(filename, csvreader.line_num, msg)
-                    failures += 1
+                    error(msg)
 
-    return failures == 0
+    return error.failures == 0
 
 
 if __name__ == "__main__":
