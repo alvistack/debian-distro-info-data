@@ -1,8 +1,21 @@
-distro-info-data (0.57) UNRELEASED; urgency=medium
+distro-info-data (0.57) unstable; urgency=medium
 
+  [ Dimitri John Ledkov ]
   * Document Ubuntu ESM overlap period (LP: #2003949)
 
- -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Thu, 26 Jan 2023 13:43:15 +0000
+  [ Stefano Rivera ]
+  * Tighten validate-csv-data heuristics, to limit Ubuntu EoLs to Tue-Thursday
+  * Correct error message for EoL date weekdays
+  * Ensure Ubuntu LTS releases have some overlap with ESM
+  * Correct exit code for EoL date weekdays
+
+  [ Benjamin Drung ]
+  * Format Python code with black
+  * Some refactoring in validate-csv-data for better readability
+  * Update year in debian/copyright
+  * Bump Standards-Version to 4.6.2
+
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 22 Feb 2023 15:45:05 +0100
 
 distro-info-data (0.56) unstable; urgency=medium
 
