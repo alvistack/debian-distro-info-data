@@ -1,3 +1,13 @@
+distro-info-data (0.52ubuntu0.3) jammy; urgency=medium
+
+  [ Benjamin Drung ]
+  * Publish only main branch to GitLab Pages
+
+  [ Dimitri John Ledkov ]
+  * Document Ubuntu ESM overlap period (LP: #2003949)
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Mon, 06 Mar 2023 11:05:22 +0000
+
 distro-info-data (0.52ubuntu0.2) jammy; urgency=medium
 
   * Add Ubuntu 23.04, Lunar Lobster (LP: #1993667)
