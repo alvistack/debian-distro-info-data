@@ -1,3 +1,9 @@
+distro-info-data (0.58) UNRELEASED; urgency=medium
+
+  * Add Ubuntu 23.10 Mantic M.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 10 Mar 2023 21:29:51 -0400
+
 distro-info-data (0.57) unstable; urgency=medium
 
   [ Dimitri John Ledkov ]
