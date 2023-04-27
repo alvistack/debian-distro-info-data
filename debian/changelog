@@ -6,6 +6,7 @@ distro-info-data (0.51+deb11u4) UNRELEASED; urgency=medium
     - Tighten validate-csv-data heuristics, restricting Ubuntu EoLs to
       Tue-Thursday.
     - Document Ubuntu ESM overlap period (LP: #2003949)
+    - Add Ubuntu 23.10 Mantic Minotaur (LP: #2018028)
 
  -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
 
