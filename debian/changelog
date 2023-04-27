@@ -7,6 +7,7 @@ distro-info-data (0.51+deb11u4) UNRELEASED; urgency=medium
       Tue-Thursday.
     - Document Ubuntu ESM overlap period (LP: #2003949)
     - Add Ubuntu 23.10 Mantic Minotaur (LP: #2018028)
+    - Set the planned release date for Debian bookworm (and an EoL based on it).
 
  -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
 
