@@ -1,6 +1,6 @@
 distro-info-data (0.58) UNRELEASED; urgency=medium
 
-  * Add Ubuntu 23.10 Mantic Minotaur.
+  * Add Ubuntu 23.10 Mantic Minotaur (LP: #2018028)
   * Set the planned release date for Debian bookworm (and an EoL based on it).
 
  -- Stefano Rivera <stefanor@debian.org>  Fri, 10 Mar 2023 21:29:51 -0400
