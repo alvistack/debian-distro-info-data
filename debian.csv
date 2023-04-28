@@ -16,7 +16,7 @@ version,codename,series,created,release,eol
 10,Buster,buster,2017-06-17,2019-07-06,2022-08-14
 11,Bullseye,bullseye,2019-07-06,2021-08-14,2024-08-14
 12,Bookworm,bookworm,2021-08-14,2023-06-10,2026-06-10
-13,Trixie,trixie,2023-08-01
+13,Trixie,trixie,2023-06-10
 14,Forky,forky,2025-08-01
 ,Sid,sid,1993-08-16
 ,Experimental,experimental,1993-08-16
