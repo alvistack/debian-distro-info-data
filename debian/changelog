@@ -1,10 +1,10 @@
-distro-info-data (0.58) UNRELEASED; urgency=medium
+distro-info-data (0.58) unstable; urgency=medium
 
   * Add Ubuntu 23.10 Mantic Minotaur (LP: #2018028)
   * Set the planned release date for Debian bookworm (and an EoL based on it).
   * Adjust trixie's creation date to match bookworm's release.
 
- -- Stefano Rivera <stefanor@debian.org>  Fri, 10 Mar 2023 21:29:51 -0400
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 28 Apr 2023 19:24:30 -0400
 
 distro-info-data (0.57) unstable; urgency=medium
 
