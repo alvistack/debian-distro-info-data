@@ -1,4 +1,4 @@
-distro-info-data (0.51+deb11u4) UNRELEASED; urgency=medium
+distro-info-data (0.51+deb11u4) bullseye; urgency=medium
 
   * Update data to 0.58:
     - Add Debian 14 "forky" with a vague creation date.
@@ -10,7 +10,7 @@ distro-info-data (0.51+deb11u4) UNRELEASED; urgency=medium
     - Set the planned release date for Debian bookworm (and an EoL based on it).
     - Adjust trixie's creation date to match bookworm's release.
 
- -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:30:57 -0400
 
 distro-info-data (0.51+deb11u3) bullseye; urgency=medium
 
