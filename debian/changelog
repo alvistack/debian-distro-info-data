@@ -1,3 +1,9 @@
+distro-info-data (0.59) UNRELEASED; urgency=medium
+
+  * Clean .pyc files and mypy cache.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
+
 distro-info-data (0.58) unstable; urgency=medium
 
   * Add Ubuntu 23.10 Mantic Minotaur (LP: #2018028)
