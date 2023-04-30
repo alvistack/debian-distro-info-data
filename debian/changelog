@@ -10,7 +10,7 @@ distro-info-data (0.36~bpo8+3) jessie-lts; urgency=medium
     - Set the planned release date for Debian bookworm (and an EoL based on it).
     - Adjust trixie's creation date to match bookworm's release.
 
- -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Oct 2022 14:06:00 +0200
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 30 Apr 2023 18:25:32 -0400
 
 distro-info-data (0.36~bpo8+2) jessie-lts; urgency=medium
 
