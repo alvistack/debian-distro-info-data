@@ -1,3 +1,12 @@
+distro-info-data (0.54ubuntu0.3) kinetic; urgency=medium
+
+  * Add Ubuntu 23.10 Mantic Minotaur. (LP: #2018028)
+  * Add Debian 14 "forky" with a vague creation date.
+  * Set the planned release date for Debian bookworm (and an EoL based on it).
+  * Adjust trixie's creation date to match bookworm's release.
+
+ -- Benjamin Drung <bdrung@ubuntu.com>  Mon, 01 May 2023 14:36:51 +0200
+
 distro-info-data (0.54ubuntu0.2) kinetic; urgency=medium
 
   * Document Ubuntu ESM overlap period (LP: #2003949)
