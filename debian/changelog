@@ -1,3 +1,11 @@
+distro-info-data (0.57ubuntu0.1) lunar; urgency=medium
+
+  * Add Ubuntu 23.10 Mantic Minotaur (LP: #2018028)
+  * Set the planned release date for Debian bookworm (and an EoL based on it).
+  * Adjust trixie's creation date to match bookworm's release.
+
+ -- Benjamin Drung <bdrung@ubuntu.com>  Mon, 01 May 2023 14:14:27 +0200
+
 distro-info-data (0.57) unstable; urgency=medium
 
   [ Dimitri John Ledkov ]
