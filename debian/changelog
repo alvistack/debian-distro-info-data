@@ -1,3 +1,15 @@
+distro-info-data (0.37ubuntu0.17) bionic; urgency=medium
+
+  * Add Ubuntu 23.10 Mantic Minotaur. (LP: #2018028)
+  * Correct release and EOL date of Debian 8 "jessie"
+  * Add EOL date for Debian 10 "Buster"
+  * Add release and EOL dates for Debian 11 "Bullseye"
+  * Set the planned release date for Debian bookworm (and an EoL based on it).
+  * Add Debian 13 "Trixie"
+  * Add Debian 14 "forky" with a vague creation date.
+
+ -- Benjamin Drung <bdrung@ubuntu.com>  Mon, 01 May 2023 16:04:56 +0200
+
 distro-info-data (0.37ubuntu0.16) bionic; urgency=medium
 
   * Document Ubuntu ESM overlap period (LP: #2003949)
