@@ -2,9 +2,17 @@
 include:
   - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/recipes/debian.yml
 
-image: debian:stable
+# Add a deploy stage to the end
+stages:
+  - provisioning
+  - build
+  - publish
+  - test
+  - deploy
 
 pages:
+  image: debian:stable
+  stage: deploy
   script:
     - mkdir public
     - cp ubuntu.csv debian.csv public/
