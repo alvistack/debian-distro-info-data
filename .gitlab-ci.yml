@@ -1,8 +1,2 @@
 include:
-- https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/recipes/debian.yml
-
-variables:
-    RELEASE: 'jessie'
-    SALSA_CI_COMPONENTS: 'main contrib non-free'
-    SALSA_CI_DISABLE_REPROTEST: 1
-    SALSA_CI_DISABLE_LINTIAN: 1
+- https://salsa.debian.org/lts-team/pipeline/raw/master/recipes/jessie.yml
