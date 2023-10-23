@@ -1,3 +1,10 @@
+distro-info-data (0.58+deb12u1) bookworm; urgency=medium
+
+  [ Benjamin Drung ]
+  * Add Ubuntu 24.04 LTS Noble N.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
+
 distro-info-data (0.58) unstable; urgency=medium
 
   * Add Ubuntu 23.10 Mantic Minotaur (LP: #2018028)
