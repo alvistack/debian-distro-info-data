@@ -1,3 +1,10 @@
+distro-info-data (0.51+deb11u5) bullseye; urgency=medium
+
+  [ Benjamin Drung ]
+  * Add Ubuntu 24.04 LTS Noble N.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
+
 distro-info-data (0.51+deb11u4) bullseye; urgency=medium
 
   * Update data to 0.58:
