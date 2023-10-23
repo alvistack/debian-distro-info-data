@@ -1,6 +1,10 @@
 distro-info-data (0.59) UNRELEASED; urgency=medium
 
+  [ Stefano Rivera ]
   * Clean .pyc files and mypy cache.
+
+  [ Benjamin Drung ]
+  * Add Ubuntu 24.04 LTS Noble N.
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
 
