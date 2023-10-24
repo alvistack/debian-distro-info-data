@@ -129,7 +129,7 @@ def validate(filename, distro):
                     continue
                 if not eol_date:
                     continue
-                if eol_date >= date(2021, 1, 1):
+                if eol_date >= date(2021, 5, 1):
                     if eol_date.weekday() == 0 or eol_date.weekday() >= 4:
                         msg = (
                             "{column} for {row[codename]}"
