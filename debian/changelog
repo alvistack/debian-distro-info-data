@@ -6,6 +6,7 @@ distro-info-data (0.59) UNRELEASED; urgency=medium
   [ Benjamin Drung ]
   * Add Ubuntu 24.04 LTS Noble N.
   * Correct Ubuntu 6.10 EOL date to 2008-04-25
+  * Correct Ubuntu 16.04 ESM begin to 2021-04-30
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
 
