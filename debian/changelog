@@ -3,6 +3,7 @@ distro-info-data (0.41+deb10u2~bpo9+4) stretch-lts; urgency=medium
   [ Benjamin Drung ]
   * Add Ubuntu 24.04 LTS Noble N.
   * Correct Ubuntu 16.04 EOL to 2021-04-30
+  * Correct Debian 3.1 EOL date to 2008-03-31
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
 
