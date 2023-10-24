@@ -2,6 +2,7 @@ distro-info-data (0.41+deb10u8) buster-security; urgency=medium
 
   [ Benjamin Drung ]
   * Add Ubuntu 24.04 LTS Noble N.
+  * Correct Ubuntu 16.04 EOL to 2021-04-30
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
 
