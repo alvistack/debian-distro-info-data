@@ -5,6 +5,7 @@ distro-info-data (0.58+deb12u1) bookworm; urgency=medium
   * Correct Ubuntu 6.10 EOL date to 2008-04-25
   * Correct Ubuntu 16.04 ESM begin to 2021-04-30
   * Move Ubuntu 12.04 ESM end date back to Friday, 2019-04-26
+  * Correct Debian 3.1 EOL date to 2008-03-31
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
 
