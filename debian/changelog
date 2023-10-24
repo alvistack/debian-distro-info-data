@@ -5,6 +5,7 @@ distro-info-data (0.36~bpo8+4) jessie-lts; urgency=medium
   * Correct Ubuntu 16.04 EOL to 2021-04-30
   * Correct Debian 3.1 EOL date to 2008-03-31
   * Correct Debian 7 EOL date to 2016-04-25
+  * Move Debian 9 EOL to the 9.13 release date 2020-07-18
 
  -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
 
