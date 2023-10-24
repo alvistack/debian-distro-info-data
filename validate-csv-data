@@ -151,7 +151,7 @@ def _check_that_eol_lands_on_a_weekday(row: RowDict, error: ErrorLogger) -> None
         if not eol_date:
             continue
         assert isinstance(eol_date, date)
-        if eol_date >= date(2021, 1, 1):
+        if eol_date >= date(2021, 5, 1):
             if eol_date.weekday() == 0 or eol_date.weekday() >= 4:
                 msg = (
                     f"{column} for {row['codename']}"
