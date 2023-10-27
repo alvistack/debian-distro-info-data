@@ -1,7 +1,7 @@
 distro-info-data (0.41+deb10u8) buster-security; urgency=medium
 
   [ Benjamin Drung ]
-  * Add Ubuntu 24.04 LTS Noble N.
+  * Add Ubuntu 24.04 LTS Noble Numbat (LP: #2041662).
   * Correct Ubuntu 16.04 EOL to 2021-04-30
   * Correct Debian 3.1 EOL date to 2008-03-31
   * Correct Debian 7 EOL date to 2016-04-25
