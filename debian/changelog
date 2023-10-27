@@ -1,4 +1,4 @@
-distro-info-data (0.59) UNRELEASED; urgency=medium
+distro-info-data (0.59) unstable; urgency=medium
 
   [ Stefano Rivera ]
   * Clean .pyc files and mypy cache.
@@ -13,7 +13,7 @@ distro-info-data (0.59) UNRELEASED; urgency=medium
   * Move Debian 9 EOL to the 9.13 release date 2020-07-18
   * Move Debian 10 EOL to the 10.13 release date 2022-09-10
 
- -- Stefano Rivera <stefanor@debian.org>  Sat, 29 Apr 2023 14:38:11 -0400
+ -- Benjamin Drung <bdrung@debian.org>  Fri, 27 Oct 2023 15:17:07 +0200
 
 distro-info-data (0.58) unstable; urgency=medium
 
