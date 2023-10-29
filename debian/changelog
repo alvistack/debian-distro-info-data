@@ -7,6 +7,9 @@ distro-info-data (0.41+deb10u8) buster-security; urgency=medium
     - Correct Debian 7 EOL date to 2016-04-25
     - Move Debian 9 EOL to the 9.13 release date 2020-07-18
     - Move Debian 10 EOL to the 10.13 release date 2022-09-10
+  * Catch up previously excluded historical updates from 0.46:
+    - Tweak EOL dates, by a couple of days, for Ubuntu 9.10, 10.04, 12.04,
+      15.04, 15.10, and 19.04.
 
  -- Stefano Rivera <stefanor@debian.org>  Sun, 29 Oct 2023 12:49:38 +0200
 
