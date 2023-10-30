@@ -1,6 +1,6 @@
 distro-info-data (0.36~bpo8+4) jessie-lts; urgency=medium
 
-  * Update data to 0.58, without new columns:
+  * Update data to 0.59, without new columns:
     - Add Ubuntu 24.04 LTS Noble Numbat (LP: #2041662).
     - Correct Ubuntu 16.04 EOL to 2021-04-30
     - Correct Debian 3.1 EOL date to 2008-03-31
@@ -11,7 +11,7 @@ distro-info-data (0.36~bpo8+4) jessie-lts; urgency=medium
     - Tweak EOL dates, by a couple of days, for Ubuntu 9.10, 10.04, 12.04,
       15.04, 15.10, and 19.04.
 
- -- Stefano Rivera <stefanor@debian.org>  Sun, 29 Oct 2023 12:49:38 +0200
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 30 Oct 2023 12:40:41 +0200
 
 distro-info-data (0.36~bpo8+3) jessie-lts; urgency=medium
 
