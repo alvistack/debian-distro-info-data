@@ -1,6 +1,12 @@
+distro-info-data (0.41+deb10u9) UNRELEASED; urgency=medium
+
+  * Correct typo in previous changelog entry (0.59, not 0.58)
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 30 Oct 2023 11:57:41 +0200
+
 distro-info-data (0.41+deb10u8) buster-security; urgency=medium
 
-  * Update data to 0.58, without new columns:
+  * Update data to 0.59, without new columns:
     - Add Ubuntu 24.04 LTS Noble Numbat (LP: #2041662).
     - Correct Ubuntu 16.04 EOL to 2021-04-30
     - Correct Debian 3.1 EOL date to 2008-03-31
