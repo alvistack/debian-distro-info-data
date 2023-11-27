@@ -1,3 +1,13 @@
+distro-info-data (0.60) unstable; urgency=medium
+
+  [ Santiago Ruano Rincón ]
+  * Declare LTS and ELTS intentions for bullseye and bookworm.
+
+  [ Utkarsh Gupta ]
+  * debian: Fix LTS EOL date for bullseye.
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Mon, 27 Nov 2023 12:23:55 +0000
+
 distro-info-data (0.59) unstable; urgency=medium
 
   [ Stefano Rivera ]
