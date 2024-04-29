@@ -1,3 +1,14 @@
+distro-info-data (0.61) unstable; urgency=medium
+
+  [ Jeremy Bícha ]
+  * debian.csv: Fix EOL date for 2.2
+
+  [ Benjamin Drung ]
+  * Add Ubuntu 24.10 "Oracular Oriole" (LP: #2064136)
+  * Update year in debian/copyright
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 29 Apr 2024 21:48:31 +0200
+
 distro-info-data (0.60) unstable; urgency=medium
 
   [ Santiago Ruano Rincón ]
