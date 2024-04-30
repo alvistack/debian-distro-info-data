@@ -34,7 +34,7 @@ def validate(filename, distro):
     Returns True if the given CSV file is current and otherwise False.
     """
     csvreader = get_csv_dict_reader(filename)
-    today = datetime.datetime.utcnow().date()
+    today = datetime.datetime.now(tz=datetime.UTC).date()
 
     last_release = None
     dev_releases = []
