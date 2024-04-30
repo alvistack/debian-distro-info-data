@@ -1,3 +1,10 @@
+distro-info-data (0.62) unstable; urgency=medium
+
+  * Name autopkgtest "up-to-date"
+  * up-to-date: Replace deprecated datetime.utcnow() by datetime.now(UTC)
+
+ -- Benjamin Drung <bdrung@debian.org>  Tue, 30 Apr 2024 12:45:11 +0200
+
 distro-info-data (0.61) unstable; urgency=medium
 
   [ Jeremy Bícha ]
