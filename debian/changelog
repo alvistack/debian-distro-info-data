@@ -1,8 +1,17 @@
 distro-info-data (0.41+deb10u9) UNRELEASED; urgency=medium
 
   * Correct typo in previous changelog entry (0.59, not 0.58)
+  * Add new columns from distro-info-data.
+    - This breaks distro-info << 0.21+deb10u1.
+    - Update validation tests to match.
+    - Port validation tests typing syntax to Python 3.7.
+  * Update data to 0.61:
+    - Declare LTS and ELTS intentions for bullseye and bookworm
+    - debian: Fix LTS EOL date for bullseye
+    - debian.csv: Fix EOL date for 2.2
+    - Add Ubuntu 24.10 "Oracular Oriole" (LP: #2064136)
 
- -- Stefano Rivera <stefanor@debian.org>  Mon, 30 Oct 2023 11:57:41 +0200
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 30 Apr 2024 21:09:01 -0400
 
 distro-info-data (0.41+deb10u8) buster-security; urgency=medium
 
