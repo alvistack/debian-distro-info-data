@@ -61,7 +61,7 @@ _STRINGS = {
     "debian": ("codename", "series"),
     "ubuntu": ("version", "codename", "series"),
 }
-RowDict = dict[str, typing.Union[None, date, str]]
+RowDict = typing.Dict[str, typing.Union[None, date, str]]
 
 
 class ErrorLogger:  # pylint: disable=too-few-public-methods
