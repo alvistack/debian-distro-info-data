@@ -1,3 +1,17 @@
+distro-info-data (0.36~bpo8+5) UNRELEASED; urgency=medium
+
+  * Add new columns from distro-info-data.
+    - This breaks distro-info << 0.14+deb8u1.
+    - Update validation tests to match.
+    - Port validation tests back to Python 3.4.
+  * Update data to 0.61:
+    - Declare LTS and ELTS intentions for bullseye and bookworm
+    - debian: Fix LTS EOL date for bullseye
+    - debian.csv: Fix EOL date for 2.2
+    - Add Ubuntu 24.10 "Oracular Oriole" (LP: #2064136)
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 30 Apr 2024 21:09:01 -0400
+
 distro-info-data (0.36~bpo8+4) jessie-lts; urgency=medium
 
   * Update data to 0.59, without new columns:
