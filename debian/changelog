@@ -1,4 +1,4 @@
-distro-info-data (0.51+deb11u6) UNRELEASED; urgency=medium
+distro-info-data (0.51+deb11u6) bullseye; urgency=medium
 
   * Update data to 0.61:
     - Declare LTS and ELTS intentions for bullseye and bookworm
@@ -6,7 +6,7 @@ distro-info-data (0.51+deb11u6) UNRELEASED; urgency=medium
     - debian.csv: Fix EOL date for 2.2
     - Add Ubuntu 24.10 "Oracular Oriole" (LP: #2064136)
 
- -- Stefano Rivera <stefanor@debian.org>  Tue, 30 Apr 2024 20:40:07 -0400
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 30 Apr 2024 20:54:51 -0400
 
 distro-info-data (0.51+deb11u5) bullseye; urgency=medium
 
