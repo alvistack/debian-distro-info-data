@@ -1,7 +1,7 @@
 distro-info-data (0.63) UNRELEASED; urgency=medium
 
-  * Revert the change to the LTS EOL date for bullseye from 0.60. It was
-    previously correct.
+  * Adjust bullseye LTS EOL to August 31st, to give 2 full years of LTS
+    coverage.
 
  -- Stefano Rivera <stefanor@debian.org>  Wed, 12 Jun 2024 18:02:54 +0100
 
