@@ -1,3 +1,9 @@
+distro-info-data (0.63) unstable; urgency=medium
+
+  * Add Ubuntu 25.04 "Plucky Puffin" (LP: #2084572)
+
+ -- Benjamin Drung <bdrung@debian.org>  Thu, 17 Oct 2024 12:24:37 +0200
+
 distro-info-data (0.62) unstable; urgency=medium
 
   * Name autopkgtest "up-to-date"
