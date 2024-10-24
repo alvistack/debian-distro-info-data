@@ -1,3 +1,10 @@
+distro-info-data (0.36~bpo8+6) UNRELEASED; urgency=medium
+
+  * Update data to 0.63:
+    - Add Ubuntu 25.04 "Plucky Puffin".
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 24 Oct 2024 12:13:14 -0700
+
 distro-info-data (0.36~bpo8+5) jessie-lts; urgency=medium
 
   * Add new columns from distro-info-data.
