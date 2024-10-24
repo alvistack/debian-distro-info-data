@@ -1,9 +1,9 @@
-distro-info-data (0.51+deb11u7) UNRELEASED; urgency=medium
+distro-info-data (0.51+deb11u7) bullseye-security; urgency=medium
 
   * Update data to 0.63:
     - Add Ubuntu 25.04 "Plucky Puffin" (LP: #2084572)
 
- -- Stefano Rivera <stefanor@debian.org>  Wed, 23 Oct 2024 18:59:40 -0700
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 23 Oct 2024 19:00:07 -0700
 
 distro-info-data (0.51+deb11u6) bullseye; urgency=medium
 
