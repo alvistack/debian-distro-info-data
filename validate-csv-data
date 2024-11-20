@@ -119,7 +119,7 @@ def _check_required_date_columns(row: RowDict, error: ErrorLogger) -> None:
 
 
 def _compare_dates(row: RowDict, error: ErrorLogger) -> None:
-    for (date1_column, date2_column) in _EARLIER_DATES:
+    for date1_column, date2_column in _EARLIER_DATES:
         date2 = row.get(date2_column)
         if date2 is None:
             continue
