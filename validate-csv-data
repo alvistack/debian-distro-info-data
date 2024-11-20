@@ -46,9 +46,19 @@ _COLUMNS = {
         "eol",
         "eol-server",
         "eol-esm",
+        "eol-legacy",
     ),
 }
-_DATES = ("created", "release", "eol", "eol-server", "eol-esm", "eol-lts", "eol-elts")
+_DATES = (
+    "created",
+    "release",
+    "eol",
+    "eol-server",
+    "eol-esm",
+    "eol-lts",
+    "eol-elts",
+    "eol-legacy",
+)
 _EARLIER_DATES = (
     ("created", "release"),
     ("release", "eol"),
@@ -56,6 +66,7 @@ _EARLIER_DATES = (
     ("eol", "eol-esm"),
     ("eol", "eol-lts"),
     ("eol-lts", "eol-elts"),
+    ("eol-esm", "eol-legacy"),
 )
 _STRINGS = {
     "debian": ("codename", "series"),
