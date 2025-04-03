@@ -1,3 +1,10 @@
+distro-info-data (0.51+deb11u8) UNRELEASED; urgency=medium
+
+  * Update data to 0.64:
+    * Add Debian 15 "Duke".
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 03 Apr 2025 08:22:52 -0400
+
 distro-info-data (0.51+deb11u7) bullseye-security; urgency=medium
 
   * Update data to 0.63:
