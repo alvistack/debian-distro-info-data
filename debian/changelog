@@ -1,3 +1,9 @@
+distro-info-data (0.64) UNRELEASED; urgency=medium
+
+  * Add Debian 15 "Duke".
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 03 Apr 2025 08:22:52 -0400
+
 distro-info-data (0.63) unstable; urgency=medium
 
   * Add Ubuntu 25.04 "Plucky Puffin" (LP: #2084572)
