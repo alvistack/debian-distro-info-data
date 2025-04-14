@@ -2,6 +2,7 @@ distro-info-data (0.64) UNRELEASED; urgency=medium
 
   * Add Debian 15 "Duke".
   * Add Ubuntu 25.10 "Questing Quokka".
+  * Bump Standards-Version to 4.7.2, no changes needed.
 
  -- Stefano Rivera <stefanor@debian.org>  Thu, 03 Apr 2025 08:22:52 -0400
 
