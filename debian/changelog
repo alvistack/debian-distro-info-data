@@ -2,6 +2,7 @@ distro-info-data (0.41+deb10u2~bpo9+7) UNRELEASED; urgency=medium
 
   * Update data to 0.64:
     * Add Debian 15 "Duke".
+    * Add Ubuntu 25.10 "Questing Quokka".
 
  -- Stefano Rivera <stefanor@debian.org>  Thu, 03 Apr 2025 08:22:52 -0400
 
