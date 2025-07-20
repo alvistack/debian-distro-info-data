@@ -1,3 +1,13 @@
+distro-info-data (0.65) unstable; urgency=medium
+
+  [ Stefano Rivera ]
+  * Add release and estimated EoL dates for Debian 13 "Trixie".
+
+  [ Benjamin Drung ]
+  * Add Ubuntu end of Legacy Support dates (new eol-legacy column).
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 20 Jul 2025 20:34:19 +0200
+
 distro-info-data (0.64) unstable; urgency=medium
 
   * Add Debian 15 "Duke".
