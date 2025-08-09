@@ -1,10 +1,10 @@
-distro-info-data (0.58+deb12u5) UNRELEASED; urgency=medium
+distro-info-data (0.58+deb12u5) bookworm; urgency=medium
 
   * Update data to 0.66:
     - Add Ubuntu end of Legacy Support dates (new eol-legacy column).
     - Add release and estimated EoL dates for Debian 13 "Trixie".
 
- -- Stefano Rivera <stefanor@debian.org>  Sat, 09 Aug 2025 15:17:11 +0200
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 09 Aug 2025 15:17:37 +0200
 
 distro-info-data (0.58+deb12u4) bookworm; urgency=medium
 
