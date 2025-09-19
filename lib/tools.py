@@ -49,7 +49,7 @@ def get_csv_dict_reader(filename: str) -> csv.DictReader:
 
 def main(validation_function):
     """Main function with command line parameter parsing."""
-    parser = argparse.ArgumentParser(usage="%(prog)s [-h] -d|-u csv-file")
+    parser = argparse.ArgumentParser(usage="%(prog)s [-h] -d|-u|-e csv-file")
 
     parser.add_argument(
         "-d",
@@ -67,15 +67,27 @@ def main(validation_function):
         default=False,
         help="validate an Ubuntu CSV file",
     )
+    parser.add_argument(
+        "-e",
+        "--eLxr",
+        dest="eLxr",
+        action="store_true",
+        default=False,
+        help="validate an eLxr CSV file",
+    )
     parser.add_argument("csv_file", metavar="csv-file", help="CSV file to validate")
 
     args = parser.parse_args()
-    if len([x for x in [args.debian, args.ubuntu] if x]) != 1:
-        parser.error("You have to select exactly one of --debian, --ubuntu.")
+    if len([x for x in [args.debian, args.ubuntu, args.eLxr] if x]) != 1:
+        parser.error("You have to select exactly one of --debian, --ubuntu, --eLxr.")
 
     if args.debian:
         distro = "debian"
-    else:
+    elif args.ubuntu:
         distro = "ubuntu"
+    elif args.eLxr:
+        distro = "elxr"
+    else:
+        raise ValueError("No supported distro argument passed.")
 
     return int(not validation_function(args.csv_file, distro))

@@ -17,7 +17,7 @@
 # pylint: disable=invalid-name
 # pylint: enable=invalid-name
 
-"""Validates a given Debian or Ubuntu distro-info CSV file."""
+"""Validates a given Debian, Ubuntu or eLxr distro-info CSV file."""
 
 import csv
 import sys
@@ -48,6 +48,16 @@ _COLUMNS = {
         "eol-esm",
         "eol-legacy",
     ),
+    "elxr": (
+        "version",
+        "codename",
+        "series",
+        "created",
+        "release",
+        "eol",
+        "eol-lts",
+        "eol-elts",
+    ),
 }
 _DATES = (
     "created",
@@ -71,6 +81,7 @@ _EARLIER_DATES = (
 _STRINGS = {
     "debian": ("codename", "series"),
     "ubuntu": ("version", "codename", "series"),
+    "elxr":   ("codename", "series"),
 }
 RowDict = dict[str, typing.Union[None, date, str]]
 

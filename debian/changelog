@@ -1,3 +1,9 @@
+distro-info-data (0.69) unstable; urgency=medium
+
+  * dch Add eLxr csv file.
+
+ -- Rong Fu <rong.fu.cn@windriver.com>  Wed, 15 Oct 2025 15:37:11 +0800
+
 distro-info-data (0.68) UNRELEASED; urgency=medium
 
   * Drop Rules-Requires-Root: no, as it is now the default.

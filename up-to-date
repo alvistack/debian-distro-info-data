@@ -25,7 +25,7 @@ import sys
 
 from lib.tools import convert_date, get_csv_dict_reader, main
 
-ROLLING_FOREVER = {"debian": ("sid", "experimental"), "ubuntu": ()}
+ROLLING_FOREVER = {"debian": ("sid", "experimental"), "ubuntu": (), "elxr": ()}
 
 
 def validate(filename, distro):
