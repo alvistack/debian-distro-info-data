@@ -1,3 +1,13 @@
+distro-info-data (0.67) unstable; urgency=medium
+
+  [ Stefano Rivera ]
+  * Update the bookworm EoL
+
+  [ Benjamin Drung ]
+  * Add Ubuntu 26.04 LTS "Resolute Raccoon" (LP: #2126961)
+
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 08 Oct 2025 23:49:34 +0200
+
 distro-info-data (0.66) unstable; urgency=medium
 
   * Correct estimation for trixie ELTS EoL to 10 years total support.
