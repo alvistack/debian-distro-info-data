@@ -1,3 +1,11 @@
+distro-info-data (0.58+deb12u6) bookworm; urgency=medium
+
+  * Update data to 0.67:
+    - Update the bookworm EoL
+    - Add Ubuntu 26.04 LTS "Resolute Raccoon" (LP: #2126961)
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 14 Oct 2025 11:57:51 +0200
+
 distro-info-data (0.58+deb12u5) bookworm; urgency=medium
 
   * Update data to 0.66:
