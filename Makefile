@@ -9,13 +9,13 @@ install:
 
 test:
 	./validate-csv-data -d debian.csv
-	./validate-csv-data -u ubuntu.csv
 	./validate-csv-data -e elxr.csv
+	./validate-csv-data -u ubuntu.csv
 
 up-to-date:
 	./up-to-date -d debian.csv
-	./up-to-date -u ubuntu.csv
 	./up-to-date -e elxr.csv
+	./up-to-date -u ubuntu.csv
 
 black:
 	black -C $(PYTHON_SOURCES)
