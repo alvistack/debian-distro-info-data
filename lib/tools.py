@@ -17,6 +17,7 @@
 import argparse
 import csv
 import datetime
+from pathlib import Path
 
 
 def convert_date(string):
@@ -49,45 +50,16 @@ def get_csv_dict_reader(filename: str) -> csv.DictReader:
 
 def main(validation_function):
     """Main function with command line parameter parsing."""
-    parser = argparse.ArgumentParser(usage="%(prog)s [-h] -d|-u|-e csv-file")
+    parser = argparse.ArgumentParser(usage="%(prog)s [-h] csv-file")
 
     parser.add_argument(
-        "-d",
-        "--debian",
-        dest="debian",
-        action="store_true",
-        default=False,
-        help="validate a Debian CSV file",
+        "csv_file", metavar="csv-file", type=Path, help="CSV file to validate"
     )
-    parser.add_argument(
-        "-u",
-        "--ubuntu",
-        dest="ubuntu",
-        action="store_true",
-        default=False,
-        help="validate an Ubuntu CSV file",
-    )
-    parser.add_argument(
-        "-e",
-        "--eLxr",
-        dest="eLxr",
-        action="store_true",
-        default=False,
-        help="validate an eLxr CSV file",
-    )
-    parser.add_argument("csv_file", metavar="csv-file", help="CSV file to validate")
 
     args = parser.parse_args()
-    if len([x for x in [args.debian, args.ubuntu, args.eLxr] if x]) != 1:
-        parser.error("You have to select exactly one of --debian, --ubuntu, --eLxr.")
+    if not args.csv_file.exists():
+        parser.error(f"{args.csv_file} does not exist.")
 
-    if args.debian:
-        distro = "debian"
-    elif args.ubuntu:
-        distro = "ubuntu"
-    elif args.eLxr:
-        distro = "elxr"
-    else:
-        raise ValueError("No supported distro argument passed.")
+    distro = args.csv_file.stem
 
-    return int(not validation_function(args.csv_file, distro))
+    return int(not validation_function(str(args.csv_file), distro))
