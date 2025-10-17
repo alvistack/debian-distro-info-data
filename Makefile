@@ -9,11 +9,13 @@ install:
 
 test:
 	./validate-csv-data debian.csv
+	./validate-csv-data devuan.csv
 	./validate-csv-data elxr.csv
 	./validate-csv-data ubuntu.csv
 
 up-to-date:
 	./up-to-date debian.csv
+	./up-to-date devuan.csv
 	./up-to-date elxr.csv
 	./up-to-date ubuntu.csv
 

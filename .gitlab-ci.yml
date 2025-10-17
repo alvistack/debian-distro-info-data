@@ -15,7 +15,7 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp debian.csv elxr.csv ubuntu.csv public/
+    - cp debian.csv devuan.csv elxr.csv ubuntu.csv public/
   artifacts:
     paths:
       - public
