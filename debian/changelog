@@ -1,12 +1,16 @@
-distro-info-data (0.69) unstable; urgency=medium
-
-  * dch Add eLxr csv file.
-
- -- Rong Fu <rong.fu.cn@windriver.com>  Wed, 15 Oct 2025 15:37:11 +0800
-
 distro-info-data (0.68) UNRELEASED; urgency=medium
 
+  [ Rong Fu ]
+  * dch Add eLxr csv file.
+
+  [ Mark Hindley ]
+  * Devuan data
+
+  [ Stefano Rivera ]
   * Drop Rules-Requires-Root: no, as it is now the default.
+  * Tidy the addition of eLxr a bit
+  * Simplify distro selection in validators
+  * Move forward the bookworm EoL (hand-off to LTS), again.
 
  -- Stefano Rivera <stefanor@debian.org>  Tue, 14 Oct 2025 11:45:03 +0200
 
