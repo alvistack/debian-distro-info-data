@@ -1,7 +1,7 @@
 distro-info-data (0.68) unstable; urgency=medium
 
   [ Rong Fu ]
-  * dch Add eLxr csv file.
+  * Add eLxr csv file.
 
   [ Mark Hindley ]
   * Devuan data
