@@ -96,6 +96,7 @@ _DERIVATIVES = {
             "ascii": "stretch",
             "jessie": "jessie",
             "excalibur": "trixie",
+            "freia": "forky",
             "ceres": "sid",
             "experimental": "experimental",
         },
