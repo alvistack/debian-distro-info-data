@@ -97,6 +97,7 @@ _DERIVATIVES = {
             "jessie": "jessie",
             "excalibur": "trixie",
             "freia": "forky",
+            "gryphon": "duke",
             "ceres": "sid",
             "experimental": "experimental",
         },
