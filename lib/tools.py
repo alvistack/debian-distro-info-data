@@ -31,6 +31,8 @@ def convert_date(string):
             date = datetime.date(year, month, day)
         else:
             raise ValueError("Date not in ISO 8601 format.")
+        if date.isoformat() != string:
+            raise ValueError("Date is not in canonical ISO 8601 format.")
     return date
 
 
