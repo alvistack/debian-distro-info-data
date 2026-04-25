@@ -1,0 +1,6 @@
+*.substvars
+*debhelper*
+.debhelper
+distro-info-data
+files
+tmp
