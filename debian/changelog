@@ -1,3 +1,9 @@
+distro-info-data (0.66+deb13u2) trixie; urgency=medium
+
+  * Add Ubuntu 26.10 "Stonking Stingray" (LP: #2150234).
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 25 Apr 2026 09:12:37 -0400
+
 distro-info-data (0.66+deb13u1) trixie; urgency=medium
 
   * Update database to 0.68:
