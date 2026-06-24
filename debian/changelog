@@ -1,8 +1,15 @@
-distro-info-data (0.70) UNRELEASED; urgency=medium
+distro-info-data (0.70) unstable; urgency=medium
 
+  [ Stefano Rivera ]
   * Flesh out missing changelog entries in 0.69.
 
- -- Stefano Rivera <stefanor@debian.org>  Sat, 25 Apr 2026 09:09:05 -0400
+  [ Benjamin Drung ]
+  * Ubuntu Legacy Support extension has been increased to 15 years
+    (LP: #2131678)
+  * Drop obsolete Priority: optional
+  * Bump Standards-Version to 4.7.4
+
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 24 Jun 2026 12:00:54 +0200
 
 distro-info-data (0.69) unstable; urgency=medium
 
