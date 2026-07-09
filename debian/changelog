@@ -1,3 +1,10 @@
+distro-info-data (0.71-1) unstable; urgency=medium
+
+  * Convert source package from a native package to an upstream package to
+    make it easier to track differences in the data versus in the packaging.
+
+ -- Benjamin Drung <bdrung@debian.org>  Fri, 10 Jul 2026 01:00:47 +0200
+
 distro-info-data (0.70) unstable; urgency=medium
 
   [ Stefano Rivera ]
