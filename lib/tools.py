@@ -20,19 +20,16 @@ import datetime
 from pathlib import Path
 
 
-def convert_date(string):
+def convert_date(string: str) -> datetime.date:
     """Convert a date string in ISO 8601 into a datetime object."""
-    if not string:
-        date = None
+    parts = [int(x) for x in string.split("-")]
+    if len(parts) == 3:
+        year, month, day = parts
+        date = datetime.date(year, month, day)
     else:
-        parts = [int(x) for x in string.split("-")]
-        if len(parts) == 3:
-            year, month, day = parts
-            date = datetime.date(year, month, day)
-        else:
-            raise ValueError("Date not in ISO 8601 format.")
-        if date.isoformat() != string:
-            raise ValueError("Date is not in canonical ISO 8601 format.")
+        raise ValueError("Date not in ISO 8601 format.")
+    if date.isoformat() != string:
+        raise ValueError("Date is not in canonical ISO 8601 format.")
     return date
 
 

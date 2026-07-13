@@ -157,10 +157,13 @@ def _check_required_strings_columns(
 def _convert_dates(row: RowDict, error: ErrorLogger) -> None:
     for column in _DATES:
         if column in row:
+            value = row[column]
+            if value is None or isinstance(value, date):
+                continue
             try:
-                row[column] = convert_date(row[column])
+                row[column] = convert_date(value)
             except ValueError:
-                msg = f"Invalid date `{row[column]}' in column `{column}'"
+                msg = f"Invalid date `{value}' in column `{column}'"
                 error(msg)
                 row[column] = None
 
