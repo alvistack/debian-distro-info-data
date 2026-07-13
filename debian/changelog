@@ -1,3 +1,14 @@
+distro-info-data (0.72-1) unstable; urgency=medium
+
+  * New upstream release with only test code changes:
+    - Format Python code with black 26.3
+    - Fix type hints and add type hints to all functions
+    - Makefile: Add lint target
+    - Makefile: add linter check for isort, mypy
+    - Support Python 3.6 for Ubuntu SRUs
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 13 Jul 2026 23:06:41 +0200
+
 distro-info-data (0.71-1) unstable; urgency=medium
 
   * Convert source package from a native package to an upstream package to
