@@ -20,7 +20,7 @@ up-to-date:
 	./up-to-date ubuntu.csv
 
 black:
-	black -C $(PYTHON_SOURCES)
+	black -C --check --diff $(PYTHON_SOURCES)
 
 pylint:
 	pylint $(PYTHON_SOURCES)
