@@ -104,7 +104,6 @@ _DERIVATIVES = {
     }
 }
 RowDict = dict[str, typing.Union[None, date, str]]
-_parent_data_cache = {}
 
 
 class ErrorLogger:  # pylint: disable=too-few-public-methods
@@ -221,15 +220,12 @@ def _check_that_esm_has_overlap_period(row: RowDict, error: ErrorLogger) -> None
             error(msg)
 
 
-def _parent_data(distro: str, error: ErrorLogger) -> dict[str, str | date]:
-    global _parent_data_cache
-    if distro not in _parent_data_cache:
-        data = {}
-        for row in get_csv_dict_reader(f"{distro}.csv"):
-            _convert_dates(row, error)
-            data[row["series"]] = row
-        _parent_data_cache[distro] = data
-    return _parent_data_cache[distro]
+def _get_parent_data(distro: str, error: ErrorLogger) -> dict[str, str | date]:
+    data = {}
+    for row in get_csv_dict_reader(f"{distro}.csv"):
+        _convert_dates(row, error)
+        data[row["series"]] = row
+    return data
 
 
 def _check_that_derivative_matches(
@@ -243,7 +239,7 @@ def _check_that_derivative_matches(
         return
     if row["release"] is None:
         return
-    parent_data = _parent_data(parent, error)
+    parent_data = _get_parent_data(parent, error)
     for child_col, parent_col in _DERIVATIVES[distro]["column_map"].items():
         child_value = row[child_col]
         parent_value = parent_data[parent_series][parent_col]
