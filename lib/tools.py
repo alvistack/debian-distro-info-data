@@ -45,7 +45,7 @@ def get_csv_dict_reader(filename: str) -> csv.DictReader:
     for counter, line in enumerate(content):
         if line.startswith("#"):
             content[counter] = "\n"
-    return csv.DictReader(content)
+    return csv.DictReader(content, strict=True)
 
 
 def main(validation_function: Callable[[str, str], bool]) -> int:
