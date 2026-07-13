@@ -268,7 +268,7 @@ def _check_that_derivative_matches(
             )
 
 
-def validate(filename, distro):
+def validate(filename: str, distro: str) -> bool:
     """Validates a given CSV file.
 
     Returns True if the given CSV file is valid and otherwise False.

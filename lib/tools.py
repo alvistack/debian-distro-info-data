@@ -18,6 +18,7 @@ import argparse
 import csv
 import datetime
 from pathlib import Path
+from typing import Callable
 
 
 def convert_date(string: str) -> datetime.date:
@@ -47,7 +48,7 @@ def get_csv_dict_reader(filename: str) -> csv.DictReader:
     return csv.DictReader(content)
 
 
-def main(validation_function):
+def main(validation_function: Callable[[str, str], bool]) -> int:
     """Main function with command line parameter parsing."""
     parser = argparse.ArgumentParser(usage="%(prog)s [-h] csv-file")
 

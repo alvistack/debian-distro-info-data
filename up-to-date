@@ -33,7 +33,7 @@ ROLLING_FOREVER = {
 }
 
 
-def validate(filename, distro):
+def validate(filename: str, distro: str) -> bool:
     """Validates that the given CSV file is current.
 
     Returns True if the given CSV file is current and otherwise False.
