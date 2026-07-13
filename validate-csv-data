@@ -115,7 +115,7 @@ _DERIVATIVES = {
         },
     )
 }
-RowDict = dict[str, typing.Union[None, date, str]]
+RowDict = Dict[str, typing.Union[None, date, str]]
 
 
 class ErrorLogger:  # pylint: disable=too-few-public-methods
@@ -235,7 +235,7 @@ def _check_that_esm_has_overlap_period(row: RowDict, error: ErrorLogger) -> None
             error(msg)
 
 
-def _get_parent_data(distro: str, error: ErrorLogger) -> dict[str, RowDict]:
+def _get_parent_data(distro: str, error: ErrorLogger) -> Dict[str, RowDict]:
     data = {}
     for row in get_csv_dict_reader(f"{distro}.csv"):
         _convert_dates(row, error)
