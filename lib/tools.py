@@ -27,7 +27,7 @@ def convert_date(string):
     else:
         parts = [int(x) for x in string.split("-")]
         if len(parts) == 3:
-            (year, month, day) = parts
+            year, month, day = parts
             date = datetime.date(year, month, day)
         else:
             raise ValueError("Date not in ISO 8601 format.")
