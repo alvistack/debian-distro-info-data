@@ -5,13 +5,23 @@ include:
 variables:
   SALSA_CI_DISABLE_USCAN: 1
 
-# Add a deploy stage to the end
+# Add a lint stage to the beginning and a deploy stage to the end
 stages:
+  - lint
   - provisioning
   - build
   - publish
   - test
   - deploy
+
+lint:
+  image: debian:unstable
+  stage: lint
+  before_script:
+    - apt-get update
+    - apt-get install -y black make pylint
+  script:
+    - make lint
 
 pages:
   image: debian:stable
