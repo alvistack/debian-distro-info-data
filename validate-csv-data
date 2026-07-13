@@ -220,7 +220,7 @@ def _check_that_esm_has_overlap_period(row: RowDict, error: ErrorLogger) -> None
             error(msg)
 
 
-def _get_parent_data(distro: str, error: ErrorLogger) -> dict[str, str | date]:
+def _get_parent_data(distro: str, error: ErrorLogger) -> dict[str, RowDict]:
     data = {}
     for row in get_csv_dict_reader(f"{distro}.csv"):
         _convert_dates(row, error)
