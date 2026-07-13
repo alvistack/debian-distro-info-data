@@ -19,7 +19,7 @@ lint:
   stage: lint
   before_script:
     - apt-get update
-    - apt-get install -y black make pylint
+    - apt-get install -y black isort make pylint
   script:
     - make lint
 
