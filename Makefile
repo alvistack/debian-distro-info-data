@@ -19,10 +19,12 @@ up-to-date:
 	./up-to-date elxr.csv
 	./up-to-date ubuntu.csv
 
+lint: black pylint
+
 black:
 	black -C --check --diff $(PYTHON_SOURCES)
 
 pylint:
 	pylint $(PYTHON_SOURCES)
 
-.PHONY: black build install pylint test up-to-date
+.PHONY: black build install lint pylint test up-to-date
