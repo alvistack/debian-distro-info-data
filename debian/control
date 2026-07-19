@@ -2,7 +2,7 @@ Source: distro-info-data
 Section: devel
 Maintainer: Benjamin Drung <bdrung@debian.org>
 Uploaders: Stefano Rivera <stefanor@debian.org>
-Build-Depends: debhelper-compat (= 13), python3 <!nocheck>
+Build-Depends: debhelper-compat (= 14), python3 <!nocheck>
 Standards-Version: 4.7.4
 Homepage: https://salsa.debian.org/debian/distro-info-data
 Vcs-Git: https://salsa.debian.org/debian/distro-info-data.git
@@ -11,7 +11,6 @@ Vcs-Browser: https://salsa.debian.org/debian/distro-info-data
 Package: distro-info-data
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}
 Breaks: distro-info (<< 1.0~)
 Description: information about the distributions' releases (data files)
  Information about all releases of Debian and Ubuntu. The distro-info script
