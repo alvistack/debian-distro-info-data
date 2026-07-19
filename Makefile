@@ -8,16 +8,16 @@ install:
 	install -m 644 $(wildcard *.csv) $(DESTDIR)$(PREFIX)/share/distro-info
 
 test:
-	./validate-csv-data debian.csv
-	./validate-csv-data devuan.csv
-	./validate-csv-data elxr.csv
-	./validate-csv-data ubuntu.csv
+	./validate-csv-data $(DATADIR)debian.csv
+	./validate-csv-data $(DATADIR)devuan.csv
+	./validate-csv-data $(DATADIR)elxr.csv
+	./validate-csv-data $(DATADIR)ubuntu.csv
 
 up-to-date:
-	./up-to-date debian.csv
-	./up-to-date devuan.csv
-	./up-to-date elxr.csv
-	./up-to-date ubuntu.csv
+	./up-to-date $(DATADIR)debian.csv
+	./up-to-date $(DATADIR)devuan.csv
+	./up-to-date $(DATADIR)elxr.csv
+	./up-to-date $(DATADIR)ubuntu.csv
 
 lint: isort black mypy pylint
 
