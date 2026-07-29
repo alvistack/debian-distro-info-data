@@ -1,5 +1,10 @@
+# Use YYYY.0M.0D defined in https://calver.org/
+VERSION = 2026.07.30
+
+NAME = distro-info-data
 PREFIX ?= /usr
 PYTHON_SOURCES=lib up-to-date validate-csv-data
+SOURCES = $(PYTHON_SOURCES) $(wildcard *.csv) Makefile README.md .gitignore .gitlab-ci.yml
 
 build:
 
@@ -33,4 +38,17 @@ mypy:
 pylint:
 	pylint $(PYTHON_SOURCES)
 
-.PHONY: black build install isort lint mypy pylint test up-to-date
+%.asc: %
+	gpg --armor --batch --detach-sign --yes --output $@ $^
+
+%.tar.xz: $(SOURCES)
+	tar -cJf $@ --transform 's,^,$(NAME)-$(VERSION)/,' $^
+
+dist: ../$(NAME)-$(VERSION).tar.xz ../$(NAME)-$(VERSION).tar.xz.asc
+
+../$(NAME)_$(VERSION).orig.%: ../$(NAME)-$(VERSION).%
+	ln -sf $(notdir $^) $@
+
+debian-dist: dist ../$(NAME)_$(VERSION).orig.tar.xz ../$(NAME)_$(VERSION).orig.tar.xz.asc
+
+.PHONY: black build debian-dist dist install isort lint mypy pylint test up-to-date
