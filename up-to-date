@@ -27,7 +27,7 @@ from lib.tools import convert_date, get_csv_dict_reader, main
 
 ROLLING_FOREVER = {
     "debian": ("sid", "rc-buggy"),
-    "devuan": ("ceres", "rc-buggy"),
+    "devuan": ("ceres", "experimental"),
     "elxr": (),
     "ubuntu": (),
 }

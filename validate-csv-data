@@ -111,7 +111,7 @@ _DERIVATIVES = {
             "freia": "forky",
             "gryphon": "duke",
             "ceres": "sid",
-            "rc-buggy": "rc-buggy",
+            "experimental": "rc-buggy",
         },
     )
 }
