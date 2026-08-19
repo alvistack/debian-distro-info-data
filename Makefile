@@ -3,8 +3,9 @@ VERSION = 2026.07.30
 
 NAME = distro-info-data
 PREFIX ?= /usr
-PYTHON_SOURCES=lib up-to-date validate-csv-data
-SOURCES = $(PYTHON_SOURCES) $(wildcard *.csv) Makefile README.md .gitignore .gitlab-ci.yml
+SCRIPTS = up-to-date validate-csv-data
+PYTHON_SOURCES= lib $(SCRIPTS)
+SOURCES = $(wildcard lib/*.py) $(SCRIPTS) $(wildcard *.csv) Makefile README.md .gitignore .gitlab-ci.yml
 
 build:
 
