@@ -42,7 +42,7 @@ pylint:
 	gpg --armor --batch --detach-sign --yes --output $@ $^
 
 %.tar.xz: $(SOURCES)
-	tar -cJf $@ --transform 's,^,$(NAME)-$(VERSION)/,' $^
+	tar -cJf $@ --transform 's,^,$(NAME)-$(VERSION)/,' --owner=0 --group=0 $^
 
 dist: ../$(NAME)-$(VERSION).tar.xz ../$(NAME)-$(VERSION).tar.xz.asc
 
