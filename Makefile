@@ -1,5 +1,5 @@
 # Use YYYY.0M.0D defined in https://calver.org/
-VERSION = 2026.07.30
+VERSION = 2026.08.20
 
 NAME = distro-info-data
 PREFIX ?= /usr
