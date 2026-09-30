@@ -13,6 +13,9 @@ install:
 	install -d $(DESTDIR)$(PREFIX)/share/distro-info
 	install -m 644 $(wildcard *.csv) $(DESTDIR)$(PREFIX)/share/distro-info
 
+clean:
+	rm -rf .mypy_cache/ lib/__pycache__/
+
 test:
 	./validate-csv-data $(DATADIR)debian.csv
 	./validate-csv-data $(DATADIR)devuan.csv
@@ -52,4 +55,4 @@ dist: ../$(NAME)-$(VERSION).tar.xz ../$(NAME)-$(VERSION).tar.xz.asc
 
 debian-dist: dist ../$(NAME)_$(VERSION).orig.tar.xz ../$(NAME)_$(VERSION).orig.tar.xz.asc
 
-.PHONY: black build debian-dist dist install isort lint mypy pylint test up-to-date
+.PHONY: black build clean debian-dist dist install isort lint mypy pylint test up-to-date
